@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Главная</title>
+    <link rel="stylesheet" href="libs/swiper/swiper.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="page-wrapper__header">
+        <header class="header">
+          <div class="header__wrapper">
+            <div class="container">
+              <div class="header__row">
+                <div class="header__block">
+                  <div class="header__logo">
+                    <div class="logo"><img class="logo__img" src="img/logo.svg"></div>
+                  </div>
+                </div>
+                <div class="header__block">
+                  <div class="header__nav">
+                    <nav class="header-nav">
+                      <ul class="header-nav__list">
+                        <li class="header-nav__item"><a class="header-nav__link active" href="#">Главная</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="#">Обучение</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="#">Мероприятия</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="#">Магазин</a></li>
+                      </ul>
+                      <div class="header-nav__divider">
+                        <div class="header-nav__divider-icon">
+                          <svg class="icon icon-profile-blue ">
+                            <use xlink:href="img/svg/sprite.svg#profile-blue"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul class="header-nav__list header-nav__list-mobile">
+                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="#">Моё обучение</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="#">Мои мероприятия</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="#">Личный кабинет</a></li>
+                        <li class="header-nav__item header-nav__item_enter"><a class="header-nav__link header-nav__link_enter" href="#" data-popup="popup-enter">Войти</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="header__profile">
+                    <div class="header__profile-block">
+                      <div class="notification"><a class="notification__icon notification__icon_new" href="#">
+                          <svg class="icon icon-bell ">
+                            <use xlink:href="img/svg/sprite.svg#bell"></use>
+                          </svg></a></div>
+                    </div>
+                    <div class="header__profile-block header__profile-block_profile">
+                      <div class="header-profile trigger-wrapper">
+                        <div class="header-profile__wrapper">
+                          <div class="header-profile__wrapper-block"><a class="header-profile__link trigger-link" href="#"><span class="header-profile__link-icon">
+                                <svg class="icon icon-profile ">
+                                  <use xlink:href="img/svg/sprite.svg#profile"></use>
+                                </svg></span></a></div>
+                          <div class="header-profile__wrapper-block">
+                            <ul class="header-profile__list trigger-block">
+                              <li class="header-profile__list-item"><a class="header-profile__list-link" href="#">Моё обучение</a></li>
+                              <li class="header-profile__list-item"><a class="header-profile__list-link" href="#">Мои мероприятия</a></li>
+                              <li class="header-profile__list-item"><a class="header-profile__list-link" href="#">Личный кабинет</a></li>
+                              <li class="header-profile__list-item"><a class="header-profile__list-link header-profile__list-link_enter" href="#" data-popup="popup-enter">Войти</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header__profile-block header__profile-block_burger">
+                      <div class="burger">
+                        <div class="burger__item"></div>
+                        <div class="burger__item"></div>
+                        <div class="burger__item"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="page-wrapper__content">
+        <div class="page-header">
+          <div class="page-header__wrapper">
+            <div class="container">
+              <div class="page-header__breadcrumb">
+                <div class="breadcrumb">
+                  <ul class="breadcrumb__list breadcrumb-list">
+                    <li class="breadcrumb-list__item"><a class="breadcrumb-list__link" href="#">Главная</a></li>
+                    <li class="breadcrumb-list__item"><a class="breadcrumb-list__link" href="#">Обучение</a></li>
+                    <li class="breadcrumb-list__item"><a class="breadcrumb-list__link" href="#">Прохождение курса</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-lesson">
+          <div class="page-lesson__wrapper">
+            <div class="training">
+              <div class="training__header">
+                <div class="container">
+                  <div class="training__header-wrapper">
+                    <div class="training__header-block">
+                      <div class="training-header">
+                        <div class="training-header__label">
+                          <p class="training-header__label-text">Тренинг</p>
+                        </div>
+                        <div class="training-header__title">
+                          <p class="title title_size-smallest">Какая-то тематика онлайн курса от MONT</p>
+                        </div>
+                        <div class="training-header__description">
+                          <p class="training-header__description-text">Это и&nbsp;рядовое обучение по&nbsp;работе с&nbsp;BI-платформой для специалистов, и&nbsp;углубленные бизнес-тренинги и&nbsp;курсы по&nbsp;управлению на&nbsp;основе данных для руководителей.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="training__info">
+                <div class="container">
+                  <div class="training__info-grid">
+                    <div class="training__info-item training__info-item_yellow">
+                      <div class="training-bonuses">
+                        <div class="training-bonuses__header">
+                          <div class="training-bonuses__img"><img src="img/bonuse.svg"></div>
+                          <div class="training-bonuses__count">
+                            <p class="title title_size-medium title_color-white">+10<span class="title_size-small">/20</span><span class="title_size-small training-bonuses__count-text">баллов</span></p>
+                          </div>
+                        </div>
+                        <div class="training-bonuses__content">
+                          <div class="training__info-progress">
+                            <div class="progress" data-count="10" data-max="20">
+                              <div class="progress__wrapper">
+                                <div class="progress__item"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="training__info-item training__info-item_small training__info-item_blue">
+                      <div class="training-compound">
+                        <div class="training-compound__header">
+                          <p class="training-compound__title">Состав курса:</p>
+                        </div>
+                        <div class="training-compound__content">
+                          <div class="training-compound__grid">
+                            <div class="training-compound__grid-item">
+                              <div class="training-compound__item">
+                                <div class="training-compound__item-icon">
+                                  <svg class="icon icon-video ">
+                                    <use xlink:href="img/svg/sprite.svg#video"></use>
+                                  </svg>
+                                </div>
+                                <div class="training-compound__item-content">
+                                  <p class="training-compound__item-text">5 видео</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="training-compound__grid-item">
+                              <div class="training-compound__item">
+                                <div class="training-compound__item-icon">
+                                  <svg class="icon icon-text-material ">
+                                    <use xlink:href="img/svg/sprite.svg#text-material"></use>
+                                  </svg>
+                                </div>
+                                <div class="training-compound__item-content">
+                                  <p class="training-compound__item-text">3 текстовых материала</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="training-compound__grid-item">
+                              <div class="training-compound__item">
+                                <div class="training-compound__item-icon">
+                                  <svg class="icon icon-pc-test ">
+                                    <use xlink:href="img/svg/sprite.svg#pc-test"></use>
+                                  </svg>
+                                </div>
+                                <div class="training-compound__item-content">
+                                  <p class="training-compound__item-text">2 теста</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="training-compound__grid-item">
+                              <div class="training-compound__item">
+                                <div class="training-compound__item-icon">
+                                  <svg class="icon icon-download-white ">
+                                    <use xlink:href="img/svg/sprite.svg#download-white"></use>
+                                  </svg>
+                                </div>
+                                <div class="training-compound__item-content">
+                                  <p class="training-compound__item-text">1 дополнительный материал</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="training__lessons">
+                <div class="container">
+                  <div class="lesson-list">
+                    <div class="lesson-list__wrapper">
+                      <div class="lesson-list__item">
+                        <div class="lesson-wrapper">
+                          <div class="lesson-wrapper__block">
+                            <div class="lesson-wrapper__content">
+                              <div class="lesson-wrapper__content-item">
+                                <p class="title title_size-medium">Введение</p>
+                              </div>
+                              <div class="lesson-wrapper__content-item">
+                                <div class="lesson-item">
+                                  <div class="lesson-item__intro">
+                                    <div class="lesson-item__intro-text">
+                                      <p class="lesson-item__text">Вводный текст, объясняющий структуру и правила прохождения курса и тестов. Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos! Eum assumenda dolorem aut veritatis accusantium qui laudantium dolores est accusamus enim et nulla totam aut molestiae impedit et pariatur quos. At praesentium doloribus qui consectetur quia non eaque illum nam nisi facilis ad voluptatum sapiente! Vel fuga delectus aut quos beatae ut veritatis autem At dolores natus quo maiores ipsa. Ut excepturi expedita et inventore exercitationem et magni laborum ut iusto numquam.</p>
+                                    </div>
+                                    <div class="lesson-item__intro-icon">
+                                      <div class="lesson-item__icon"><img class="lesson-item__icon-img" src="img/arrow-blue.svg"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lesson-list__item">
+                        <div class="lesson-wrapper">
+                          <div class="lesson-wrapper__block">
+                            <div class="lesson-wrapper__content lesson-wrapper__content-big">
+                              <div class="lesson-wrapper__content-item lesson-wrapper__content-item_expanded">
+                                <div class="lesson-wrapper__content-title">
+                                  <p class="title title_size-medium">Урок 1</p>
+                                </div>
+                              </div>
+                              <div class="lesson-wrapper__content-item">
+                                <div class="lesson-item">
+                                  <div class="lesson-item__wrapper trigger-wrapper">
+                                    <div class="lesson-item__header trigger-link">
+                                      <div class="lesson-item__header-bonus">
+                                        <div class="lesson-item__bonus bonus">
+                                          <div class="bonus__wrapper bonus__wrapper-small">
+                                            <p class="lesson-item__bonus-text bonus__text">+2</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="lesson-item__header-title">
+                                        <p class="lesson-item__title">Видео №1. <span class="lesson-item__title-bold">«Data-driven компетенции»*</span></p>
+                                      </div>
+                                      <div class="lesson-item__header-info">
+                                        <div class="lesson-item__info">
+                                          <div class="lesson-item__info-block">
+                                            <p class="lesson-item__text">5 минут</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="lesson-item__header-icon">
+                                        <div class="lesson-item__icon"><img class="lesson-item__icon-img" src="img/arrow-blue.svg"></div>
+                                      </div>
+                                    </div>
+                                    <div class="lesson-item__desc">
+                                      <p class="lesson-item__text">*Следующий материал будет доступен только после просмотра.</p>
+                                    </div>
+                                    <div class="lesson-item__content trigger-block">
+                                      <div class="lesson-item__content-grid">
+                                        <div class="lesson-item__content-block">
+                                          <div class="lesson-item__video">
+                                            <video class="lesson-item__video-block">
+                                              <source src="video/video.mp4" type="video/mp4">
+                                            </video>
+                                          </div>
+                                        </div>
+                                        <div class="lesson-item__content-block">
+                                          <p class="lesson-item__text">Небольшой комментарий к видео. Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos!</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="lesson-item">
+                                  <div class="lesson-item__wrapper trigger-wrapper">
+                                    <div class="lesson-item__header trigger-link">
+                                      <div class="lesson-item__header-bonus">
+                                        <div class="lesson-item__bonus bonus">
+                                          <div class="bonus__wrapper bonus__wrapper-small">
+                                            <p class="lesson-item__bonus-text bonus__text">+2</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="lesson-item__header-title">
+                                        <p class="lesson-item__title">Видео №1. <span class="lesson-item__title-bold">«Data-driven компетенции»*</span></p>
+                                      </div>
+                                      <div class="lesson-item__header-info">
+                                        <div class="lesson-item__info">
+                                          <div class="lesson-item__info-block">
+                                            <p class="lesson-item__text">5 минут</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="lesson-item__header-icon">
+                                        <div class="lesson-item__icon"><img class="lesson-item__icon-img" src="img/arrow-blue.svg"></div>
+                                      </div>
+                                    </div>
+                                    <div class="lesson-item__content trigger-block">
+                                      <div class="lesson-item__content-grid">
+                                        <div class="lesson-item__content-block">
+                                          <div class="lesson-item__video">
+                                            <video class="lesson-item__video-block">
+                                              <source src="video/video.mp4" type="video/mp4">
+                                            </video>
+                                          </div>
+                                        </div>
+                                        <div class="lesson-item__content-block">
+                                          <p class="lesson-item__text">Небольшой комментарий к видео. Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos!</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="lesson-item">
+                                  <div class="lesson-item__wrapper trigger-wrapper">
+                                    <div class="lesson-item__header trigger-link">
+                                      <div class="lesson-item__header-title">
+                                        <p class="lesson-item__title">Презентация. <span class="lesson-item__title-bold">«Название» </span></p>
+                                      </div>
+                                      <div class="lesson-item__header-icon">
+                                        <div class="lesson-item__icon"><img class="lesson-item__icon-img" src="img/arrow-blue.svg"></div>
+                                      </div>
+                                    </div>
+                                    <div class="lesson-item__content trigger-block">
+                                      <p class="lesson-item__text">Небольшой комментарий к дополнительному материалу. Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos!</p>
+                                    </div>
+                                    <div class="lesson-item__desc">
+                                      <div class="lesson-item__download"><a class="lesson-item__download-link" href="#">Скачать</a><span class="lesson-item__download-text">pdf, 300 Кб</span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="lesson-item">
+                                  <div class="lesson-item__wrapper trigger-wrapper">
+                                    <div class="lesson-item__header trigger-link">
+                                      <div class="lesson-item__header-bonus">
+                                        <div class="lesson-item__bonus bonus">
+                                          <div class="bonus__wrapper bonus__wrapper-small">
+                                            <p class="lesson-item__bonus-text bonus__text">+5</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="lesson-item__header-title">
+                                        <p class="lesson-item__title">Тест. <span class="lesson-item__title-bold">«Основные функции Windchill PDMLink»</span></p>
+                                      </div>
+                                      <div class="lesson-item__header-info">
+                                        <div class="lesson-item__info">
+                                          <div class="lesson-item__info-block lesson-item__info-block-desktop">
+                                            <p class="lesson-item__text">3 попытки</p>
+                                          </div>
+                                          <div class="lesson-item__info-block lesson-item__info-block-desktop">
+                                            <p class="lesson-item__text">20 вопросов</p>
+                                          </div>
+                                          <div class="lesson-item__info-block">
+                                            <p class="lesson-item__text">5 минут</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="lesson-item__header-icon">
+                                        <div class="lesson-item__icon"><img class="lesson-item__icon-img" src="img/arrow-blue.svg"></div>
+                                      </div>
+                                    </div>
+                                    <div class="lesson-item__content trigger-block">
+                                      <p class="lesson-item__text">Требуется 100% ответов. Если не ответил, повторная возможность ответа через 20 минут. Фиксируем, в каких блоках (какому видео или документу соответствует) и рекомендуем пересмотреть еще раз. Во время тестирования нельзя переключится на просмотр контента урока. Допуск только после просмотра обязательного контента.</p>
+                                      <div class="lesson-item__footer"><a class="button button-blue button-bordered lesson-item__button" href="#">Начать тестирование</a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="lesson-wrapper__content lesson-wrapper__content-big">
+                              <div class="lesson-wrapper__content-item">
+                                <p class="lesson-wrapper__title">Вопросы <br>к Уроку 2</p>
+                              </div>
+                              <div class="lesson-wrapper__content-item">
+                                <div class="lesson-item">
+                                  <div class="lesson-item__wrapper trigger-wrapper">
+                                    <div class="lesson-item__header trigger-link">
+                                      <div class="lesson-item__header-title">
+                                        <p class="lesson-item__title lesson-item__title-bold">Здесь вы можете написать куратору вопросы к пройденному Уроку 2</p>
+                                      </div>
+                                      <div class="lesson-item__header-icon">
+                                        <div class="lesson-item__icon"><img class="lesson-item__icon-img" src="img/arrow-blue.svg"></div>
+                                      </div>
+                                    </div>
+                                    <div class="lesson-item__content trigger-block">
+                                      <div class="lesson-item__form">
+                                        <form class="form lesson-form">
+                                          <div class="lesson-form__content">
+                                            <div class="form-input form-input_textarea training-form__textarea">
+                                              <textarea class="form-input__item" placeholder="Текст вопроса"></textarea>
+                                            </div>
+                                          </div>
+                                          <div class="lesson-form__footer">
+                                            <div class="lesson-form__footer-block">
+                                              <label class="attach-input">
+                                                <input class="attach-input__item" type="file"><span class="attach-input__checkmark">Прикрепить файл <span>(до 300 Кб)</span></span>
+                                              </label>
+                                            </div>
+                                            <div class="lesson-form__footer-block">
+                                              <input class="button button-blue button-bordered lesson-form__button" type="submit" value="Отправить">
+                                            </div>
+                                          </div>
+                                        </form>
+                                      </div>
+                                      <div class="lesson-item__reviews">
+                                        <div class="reviews-list">
+                                          <div class="reviews-list__item">
+                                            <div class="reviews-item">
+                                              <div class="reviews-item__wrapper">
+                                                <div class="reviews-item__header">
+                                                  <p class="reviews-item__name reviews-item__name-blue">Куратор</p>
+                                                  <p class="reviews-item__date">21 октября 2021, 18:35</p>
+                                                </div>
+                                                <div class="reviews-item__content">
+                                                  <p class="reviews-item__text">Ответ модератора. Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos!</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="reviews-list__item">
+                                            <div class="reviews-item">
+                                              <div class="reviews-item__wrapper">
+                                                <div class="reviews-item__header">
+                                                  <p class="reviews-item__name">Иванов Иван Иванович</p>
+                                                  <p class="reviews-item__date">21 октября 2021, 18:35</p>
+                                                </div>
+                                                <div class="reviews-item__content">
+                                                  <p class="reviews-item__text">Ответ модератора. Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos!</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lesson-list__item">
+                        <div class="lesson-wrapper">
+                          <div class="lesson-wrapper__block">
+                            <div class="lesson-wrapper__content lesson-wrapper__content-big">
+                              <div class="lesson-wrapper__content-item">
+                                <p class="title title_size-medium">Заключение</p>
+                              </div>
+                              <div class="lesson-wrapper__content-item">
+                                <div class="lesson-item">
+                                  <div class="lesson-item__wrapper trigger-wrapper">
+                                    <div class="lesson-item__header trigger-link">
+                                      <p class="lesson-item__text">Краткое резюме или полезные ссылки. Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos!</p>
+                                    </div>
+                                    <div class="lesson-item__content trigger-block">
+                                      <div class="lesson-item__content-grid">
+                                        <div class="lesson-item__content-block">
+                                          <div class="lesson-item__video">
+                                            <video class="lesson-item__video-block">
+                                              <source src="video/video.mp4" type="video/mp4">
+                                            </video>
+                                          </div>
+                                        </div>
+                                        <div class="lesson-item__content-block">
+                                          <p class="lesson-item__text">Небольшой комментарий к видео. Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos!</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="lesson-item">
+                                  <div class="lesson-item__wrapper trigger-wrapper">
+                                    <div class="lesson-item__header trigger-link">
+                                      <div class="lesson-item__header-bonus">
+                                        <div class="lesson-item__bonus bonus">
+                                          <div class="bonus__wrapper bonus__wrapper-small">
+                                            <p class="lesson-item__bonus-text bonus__text">+2</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="lesson-item__header-title">
+                                        <p class="lesson-item__title">Итоговый тест.<span class="lesson-item__title-bold">«Основные функции Windchill PDMLink и какое-то длинное название аж в две строки»</span></p>
+                                      </div>
+                                      <div class="lesson-item__header-info">
+                                        <div class="lesson-item__info">
+                                          <div class="lesson-item__info-block lesson-item__info-block-desktop">
+                                            <p class="lesson-item__text">3 попытки</p>
+                                          </div>
+                                          <div class="lesson-item__info-block lesson-item__info-block-desktop">
+                                            <p class="lesson-item__text">20 вопросов</p>
+                                          </div>
+                                          <div class="lesson-item__info-block">
+                                            <p class="lesson-item__text">5 минут</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="lesson-item__header-icon">
+                                        <div class="lesson-item__icon"><img class="lesson-item__icon-img" src="img/arrow-blue.svg"></div>
+                                      </div>
+                                    </div>
+                                    <div class="lesson-item__content trigger-block">
+                                      <p class="lesson-item__text">Требуется 100% ответов. Если не ответил, повторная возможность ответа через 20 минут. Фиксируем, в каких блоках (какому видео или документу соответствует) и рекомендуем пересмотреть еще раз. Во время тестирования нельзя переключится на просмотр контента урока. Допуск только после просмотра обязательного контента.</p>
+                                      <div class="lesson-item__footer"><a class="button button-blue button-bordered lesson-item__button" href="#">Начать тестирование</a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-wrapper__footer">
+        <footer class="footer">
+          <div class="footer__wrapper footer__wrapper-blue">
+            <div class="container">
+              <div class="footer__row footer__row-second">
+                <div class="footer__row-block footer__row-block_full">
+                  <div class="footer__block footer__block-desktop">
+                    <p class="footer__text footer__text-black">© 2022 группа компаний MONT</p>
+                  </div>
+                  <div class="footer__block footer__block-mobile"><a class="footer__link footer__text footer__text-black" href="mailto:mont@mont.com">mont@mont.com</a></div>
+                </div>
+                <div class="footer__row-block footer__row-block_row footer__row-block_full">
+                  <div class="footer__block"><a class="footer__link footer__text footer__text-black" href="#">Правила портала</a></div>
+                  <div class="footer__block"><a class="footer__link footer__text footer__text-black" href="#">Политика конфиденциальности</a></div>
+                  <div class="footer__block footer__block-desktop"><a class="footer__link footer__text footer__text-black" href="mailto:mont@mont.com">mont@mont.com</a></div>
+                  <div class="footer__block footer__block-mobile">
+                    <p class="footer__text footer__text-black footer__text-small">© 2022 группа компаний MONT</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="popup popup-login popup-enter">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper">
+                <form class="form login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Вход</p>
+                  </div>
+                  <div class="login-form__content">
+                    <div class="login-form__input">
+                      <div class="form-input">
+                        <input class="form-input__item form-input__item-small form-input__item-promt" id="email" required type="email" name="email">
+                        <label class="form-input__label" for="email">Логин (рабочий E-mail)</label>
+                      </div>
+                    </div>
+                    <div class="login-form__input">
+                      <div class="form-input">
+                        <input class="form-input__item form-input__item-small form-input__item-promt" id="password" required type="password">
+                        <label class="form-input__label" for="password">Пароль</label>
+                      </div>
+                    </div>
+                    <div class="login-form__input"><a class="link-blue" href="#" data-popup="popup-forgot">Забыли пароль?</a></div>
+                  </div>
+                  <div class="login-form__footer">
+                    <input class="button button-bordered button-blue button-full" type="submit" value="Войти">
+                  </div>
+                  <div class="login-form__register">
+                    <p class="login-form__text">Впервые у нас? Тогда пройдите <a href='#' class="link-blue" data-popup="popup-register">регистрацию</a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-forgot">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper">
+                <form class="form login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Восстановить доступ</p>
+                    <p class="popup-login__desc">Введите рабочую электронную почту, чтобы сбросить пароль и восстановить доступ на портал.</p>
+                  </div>
+                  <div class="login-form__content login-form__content-small">
+                    <div class="login-form__input">
+                      <div class="form-input">
+                        <label>
+                          <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Логин (рабочий E-mail)</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="login-form__footer login-form__footer-big">
+                    <input class="button button-bordered button-blue button-full" type="submit" value="Восстановить доступ">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-register">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-back login-form-button-prev login-form__back"></div>
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper">
+                <form class="form login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Регистрация</p>
+                    <div class="login-form__controls">
+                      <div class="login-form__controls-block">
+                        <p class="login-form__controls-text">Шаг <span class="login-form-controls-current">2</span>/<span class="login-form-controls-max">3</span></p>
+                      </div>
+                      <div class="login-form__controls-block">
+                        <div class="login-form__pagination">
+                          <div class="swiper-pagination login-form-pagination"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper login-form-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="login-form__content">
+                          <div class="login-form__input">
+                            <div class="form-input">
+                              <label>
+                                <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Логин (рабочий E-mail)</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="login-form__content">
+                          <div class="login-form__checkbox">
+                            <label class="checkbox"><span class="checkbox__wrapper">
+                                <input class="checkbox__input" type="checkbox"><span class="checkbox__checkmark"></span><span class="checkbox__label">Я согласен на обработку персональных данных в соответствии с <a href="#" class="link-blue">заявлением о конфиденциальности</a></span></span></label>
+                          </div>
+                          <div class="login-form__checkbox">
+                            <label class="checkbox"><span class="checkbox__wrapper">
+                                <input class="checkbox__input" type="checkbox"><span class="checkbox__checkmark"></span><span class="checkbox__label">Я согласен с <a href="#" class="link-blue">правилами портала</a></span></span></label>
+                          </div>
+                          <div class="login-form__checkbox">
+                            <label class="checkbox"><span class="checkbox__wrapper">
+                                <input class="checkbox__input" type="checkbox"><span class="checkbox__checkmark"></span><span class="checkbox__label">Я согласен на получение почтовой рассылки с анонсами курсов и информации по обучению от компании MONT</span></span></label>
+                          </div>
+                        </div>
+                        <div class="login-form__footer login-form__footer-big">
+                          <input class="button button-bordered button-blue button-full login-form-button-next" type="submit" value="Далее">
+                        </div>
+                        <div class="login-form__register">
+                          <p class="login-form__text">Уже были у нас? Тогда <a href='#' class="link-blue" data-popup="popup-register">войдите</a></p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="login-form__content">
+                          <div class="login-form__input">
+                            <div class="form-input">
+                              <label>
+                                <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Фамилия</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="login-form__input">
+                            <div class="form-input">
+                              <label>
+                                <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Имя</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="login-form__input">
+                            <div class="form-input">
+                              <label>
+                                <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Телефон</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="login-form__input">
+                            <div class="form-input">
+                              <label>
+                                <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Город</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="login-form__footer login-form__footer-big">
+                          <input class="button button-bordered button-blue button-full login-form-button-next" type="submit" value="Далее">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="login-form__content">
+                          <div class="login-form__input">
+                            <p class="login-form__text">Вам направлен пароль на указанную рабочую почту.</p>
+                          </div>
+                          <div class="login-form__input">
+                            <div class="form-input">
+                              <label>
+                                <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Пароль</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="login-form__input">
+                            <p class="login-form__text">Не пришло письмо?</p>
+                            <p class="login-form__text"><a href="#" class="link-blue">Отправить ещё раз</a> или <a href="#" class="link-blue">напишите нам</a></p>
+                          </div>
+                        </div>
+                        <div class="login-form__footer login-form__footer-big">
+                          <input class="button button-bordered button-blue button-full login-form-button-next" type="submit" value="Зарегистрироваться" data-popup="popup-thanks-code">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-thanks-code">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper">
+                <div class="login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Спасибо!</p>
+                    <p class="popup-login__desc">Ваш запрос на регистрацию направлен нам. Мы проинформируем вас о регистрации по почте.</p>
+                  </div>
+                  <div class="login-form__content"><img class="login-form__img" src="img/thanks-code.svg"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-thanks">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper">
+                <div class="login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Спасибо!</p>
+                    <p class="popup-login__desc popup-login__desc-center">Регистрация прошла успешно.</p>
+                  </div>
+                  <div class="login-form__content">
+                    <div class="login-form__img"><img class="login-form__img-item" src="img/thanks.svg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-thanks-forgot">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper popup-login__wrapper-big">
+                <div class="login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Спасибо!</p>
+                    <p class="popup-login__desc">Мы направили вам ссылку для восстановления пароля на почту. Перейдите по ней, чтобы завершить процесс входа.</p>
+                  </div>
+                  <div class="login-form__content">
+                    <div class="login-form__img"><img class="login-form__img-item" src="img/thanks-forgot.svg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-password">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper popup-login__wrapper-big">
+                <div class="login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Создайте новый пароль</p>
+                  </div>
+                  <div class="login-form__content">
+                    <div class="popup-login__wrapper">
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Новый пароль</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Повторите пароль</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="login-form__footer login-form__footer-big">
+                    <div class="popup-login__wrapper">
+                      <input class="button button-bordered button-blue button-full" type="submit" value="Войти">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-edit">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper popup-login__wrapper-big">
+                <form class="form login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Редактировать данные</p>
+                  </div>
+                  <div class="login-form__content">
+                    <div class="popup-login__wrapper">
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email" value="Иванов"><span class="form-input__label">Фамилия</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email" value="Иван"><span class="form-input__label">Имя</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email" value="+7 (999) 999 99 99"><span class="form-input__label">Телефон</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email" value="RedHat"><span class="form-input__label">Название компании</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email" value="Россия"><span class="form-input__label">Страна</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email" value="Москва"><span class="form-input__label">Город</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="login-form__footer">
+                    <div class="popup-login__wrapper">
+                      <input class="button button-bordered button-blue button-full" type="submit" value="Сохранить изменения" data-popup="popup-thanks-edit">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-thanks-edit">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper">
+                <div class="login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Готово!</p>
+                    <p class="popup-login__desc popup-login__desc-center">Данные успешно сохранены.</p>
+                  </div>
+                  <div class="login-form__content">
+                    <div class="login-form__img"><img class="login-form__img-item" src="img/thanks-edit.svg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="back-top"><img class="back-top__img" src="img/triangle-blue.svg"></div>
+        <script src="libs/swiper/swiper.js"></script>
+        <script src="js/common.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

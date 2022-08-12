@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Главная</title>
+    <link rel="stylesheet" href="libs/swiper/swiper.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="page-wrapper__header">
+        <header class="header">
+          <div class="header__wrapper">
+            <div class="container">
+              <div class="header__row">
+                <div class="header__block">
+                  <div class="header__logo">
+                    <div class="logo"><img class="logo__img" src="img/logo.svg"></div>
+                  </div>
+                </div>
+                <div class="header__block">
+                  <div class="header__nav">
+                    <nav class="header-nav">
+                      <ul class="header-nav__list">
+                        <li class="header-nav__item"><a class="header-nav__link active" href="#">Главная</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="#">Обучение</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="#">Мероприятия</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="#">Магазин</a></li>
+                      </ul>
+                      <div class="header-nav__divider">
+                        <div class="header-nav__divider-icon">
+                          <svg class="icon icon-profile-blue ">
+                            <use xlink:href="img/svg/sprite.svg#profile-blue"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul class="header-nav__list header-nav__list-mobile">
+                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="#">Моё обучение</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="#">Мои мероприятия</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="#">Личный кабинет</a></li>
+                        <li class="header-nav__item header-nav__item_enter"><a class="header-nav__link header-nav__link_enter" href="#" data-popup="popup-enter">Войти</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="header__profile">
+                    <div class="header__profile-block">
+                      <div class="notification"><a class="notification__icon notification__icon_new" href="#">
+                          <svg class="icon icon-bell ">
+                            <use xlink:href="img/svg/sprite.svg#bell"></use>
+                          </svg></a></div>
+                    </div>
+                    <div class="header__profile-block header__profile-block_profile">
+                      <div class="header-profile trigger-wrapper">
+                        <div class="header-profile__wrapper">
+                          <div class="header-profile__wrapper-block"><a class="header-profile__link trigger-link" href="#"><span class="header-profile__link-icon">
+                                <svg class="icon icon-profile ">
+                                  <use xlink:href="img/svg/sprite.svg#profile"></use>
+                                </svg></span></a></div>
+                          <div class="header-profile__wrapper-block">
+                            <ul class="header-profile__list trigger-block">
+                              <li class="header-profile__list-item"><a class="header-profile__list-link" href="#">Моё обучение</a></li>
+                              <li class="header-profile__list-item"><a class="header-profile__list-link" href="#">Мои мероприятия</a></li>
+                              <li class="header-profile__list-item"><a class="header-profile__list-link" href="#">Личный кабинет</a></li>
+                              <li class="header-profile__list-item"><a class="header-profile__list-link header-profile__list-link_enter" href="#" data-popup="popup-enter">Войти</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header__profile-block header__profile-block_burger">
+                      <div class="burger">
+                        <div class="burger__item"></div>
+                        <div class="burger__item"></div>
+                        <div class="burger__item"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="page-wrapper__content">
+        <div class="page-test">
+          <div class="page-test__wrapper page-test__wrapper-big page-test__wrapper-result">
+            <div class="container">
+              <div class="test-result">
+                <div class="test-result__wrapper">
+                  <div class="test-result__header">
+                    <h2 class="title title_size-medium title_position-center title_color-blue">Отлично!</h2><a href="#"></a>
+                  </div>
+                  <div class="test-result__content">
+                    <p class="title title_size-smallest title_position-center">Тест по теме: «Основные функции Windchill PDMLink» пройден</p>
+                  </div>
+                  <div class="test-result__info">
+                    <div class="test-result__grid">
+                      <div class="test-result__grid-item">
+                        <div class="test-result__info-item">
+                          <div class="test-result__info-header">
+                            <p class="test-result__info-title">Правильных вопросов</p>
+                          </div>
+                          <div class="test-result__info-content">
+                            <div class="test-result__info-circle">
+                              <div class="circle-test">
+                                <div class="circle-test__wrapper">
+                                  <div class="circle-test__item"></div>
+                                  <div class="test-cirlce__content">
+                                    <p class="circle-test__text">2/5</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="test-result__grid-item">
+                        <div class="test-result__info-item">
+                          <div class="test-result__info-header">
+                            <p class="test-result__info-title">Получено баллов</p>
+                          </div>
+                          <div class="test-result__info-content">
+                            <div class="test-result__info-circle">
+                              <div class="circle-test">
+                                <div class="circle-test__wrapper">
+                                  <div class="circle-test__item"></div>
+                                  <div class="test-cirlce__content">
+                                    <p class="circle-test__text">0/10</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="test-result__grid-item">
+                        <div class="test-result__info-item">
+                          <div class="test-result__info-header">
+                            <p class="test-result__info-title">Затрачено времени (мин)</p>
+                          </div>
+                          <div class="test-result__info-content">
+                            <div class="test-result__info-circle">
+                              <div class="circle-test">
+                                <div class="circle-test__wrapper">
+                                  <div class="circle-test__item"></div>
+                                  <div class="test-cirlce__content">
+                                    <p class="circle-test__text">00:05</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="test-result__buttons">
+                    <div class="test-result__buttons-item"><a class="button button-bordered button-blue" href="#">Пройти ещё раз</a></div>
+                    <div class="test-result__buttons-item"><a class="button button-bordered button-blue button-blue-light" href="#">Завершить</a></div>
+                  </div>
+                  <div class="test-result__answers">
+                    <div class="test-result__answers-header">
+                      <p class="title title_size-smallest title_position-center">Мои ответы</p>
+                    </div>
+                    <div class="test-result__answers-content">
+                      <div class="test-answers">
+                        <div class="test-answers__filter">
+                          <div class="test-answers__filter-item test-answers-filter">
+                            <div class="test-answers__filter-checkbox"></div>
+                            <p class="test-answers__filter-text">Верные</p>
+                          </div>
+                          <div class="test-answers__filter-item test-answers-filter">
+                            <div class="test-answers__filter-checkbox"></div>
+                            <p class="test-answers__filter-text">Неверные</p>
+                          </div>
+                        </div>
+                        <div class="test-answers__content">
+                          <div class="test-answers__content-item">
+                            <div class="test-answers__item" data-status="wrong">
+                              <div class="test-answers__item-wrapper">
+                                <div class="test-answers__item-header">
+                                  <p class="test-answers__item-title">Вопрос №1:</p>
+                                  <p class="test-answers__item-text">Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda?</p>
+                                </div>
+                                <div class="test-answers__item-content">
+                                  <div class="test-answers__item-result">
+                                    <div class="test-answers__item-block">
+                                      <p class="test-answers__item-title">Ответ:</p>
+                                      <p class="test-answers__item-text test-answers__item-text-small">Ab error quibusdam error aut nulla</p>
+                                    </div>
+                                    <div class="test-answers__item-block test-answers__item-block_tips">
+                                      <p class="test-answers__item-title">Подсказка:</p>
+                                      <p class="test-answers__item-text test-answers__item-text-small">Повторите материал <a href='#'>Видео №2 из Урока 1</a></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="test-answers__content-item">
+                            <div class="test-answers__item" data-status="correct">
+                              <div class="test-answers__item-wrapper">
+                                <div class="test-answers__item-header">
+                                  <p class="test-answers__item-title">Вопрос №1:</p>
+                                  <p class="test-answers__item-text">Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda?</p>
+                                </div>
+                                <div class="test-answers__item-content">
+                                  <div class="test-answers__item-result">
+                                    <div class="test-answers__item-block">
+                                      <p class="test-answers__item-title">Ответ:</p>
+                                      <p class="test-answers__item-text test-answers__item-text-small">Ab error quibusdam error aut nulla</p>
+                                    </div>
+                                    <div class="test-answers__item-block test-answers__item-block_tips">
+                                      <p class="test-answers__item-title">Подсказка:</p>
+                                      <p class="test-answers__item-text test-answers__item-text-small">Повторите материал <a href='#'>Видео №2 из Урока 1</a></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="test-answers__content-item">
+                            <div class="test-answers__item" data-status="wrong">
+                              <div class="test-answers__item-wrapper">
+                                <div class="test-answers__item-header">
+                                  <p class="test-answers__item-title">Вопрос №1:</p>
+                                  <p class="test-answers__item-text">Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda?</p>
+                                  <div class="test-answers__item-media"><img src="img/test-img.jpg"></div>
+                                </div>
+                                <div class="test-answers__item-content">
+                                  <div class="test-answers__item-result">
+                                    <div class="test-answers__item-block">
+                                      <p class="test-answers__item-title">Ответ:</p>
+                                      <p class="test-answers__item-text test-answers__item-text-small">Ab error quibusdam error aut nulla</p>
+                                    </div>
+                                    <div class="test-answers__item-block test-answers__item-block_tips">
+                                      <p class="test-answers__item-title">Подсказка:</p>
+                                      <p class="test-answers__item-text test-answers__item-text-small">Повторите материал <a href='#'>Видео №2 из Урока 1</a></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-wrapper__footer">
+        <footer class="footer">
+          <div class="footer__wrapper footer__wrapper-blue">
+            <div class="container">
+              <div class="footer__row footer__row-second">
+                <div class="footer__row-block footer__row-block_full">
+                  <div class="footer__block footer__block-desktop">
+                    <p class="footer__text footer__text-black">© 2022 группа компаний MONT</p>
+                  </div>
+                  <div class="footer__block footer__block-mobile"><a class="footer__link footer__text footer__text-black" href="mailto:mont@mont.com">mont@mont.com</a></div>
+                </div>
+                <div class="footer__row-block footer__row-block_row footer__row-block_full">
+                  <div class="footer__block"><a class="footer__link footer__text footer__text-black" href="#">Правила портала</a></div>
+                  <div class="footer__block"><a class="footer__link footer__text footer__text-black" href="#">Политика конфиденциальности</a></div>
+                  <div class="footer__block footer__block-desktop"><a class="footer__link footer__text footer__text-black" href="mailto:mont@mont.com">mont@mont.com</a></div>
+                  <div class="footer__block footer__block-mobile">
+                    <p class="footer__text footer__text-black footer__text-small">© 2022 группа компаний MONT</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="popup popup-login popup-enter">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper">
+                <form class="form login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Вход</p>
+                  </div>
+                  <div class="login-form__content">
+                    <div class="login-form__input">
+                      <div class="form-input">
+                        <input class="form-input__item form-input__item-small form-input__item-promt" id="email" required type="email" name="email">
+                        <label class="form-input__label" for="email">Логин (рабочий E-mail)</label>
+                      </div>
+                    </div>
+                    <div class="login-form__input">
+                      <div class="form-input">
+                        <input class="form-input__item form-input__item-small form-input__item-promt" id="password" required type="password">
+                        <label class="form-input__label" for="password">Пароль</label>
+                      </div>
+                    </div>
+                    <div class="login-form__input"><a class="link-blue" href="#" data-popup="popup-forgot">Забыли пароль?</a></div>
+                  </div>
+                  <div class="login-form__footer">
+                    <input class="button button-bordered button-blue button-full" type="submit" value="Войти">
+                  </div>
+                  <div class="login-form__register">
+                    <p class="login-form__text">Впервые у нас? Тогда пройдите <a href='#' class="link-blue" data-popup="popup-register">регистрацию</a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-forgot">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper">
+                <form class="form login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Восстановить доступ</p>
+                    <p class="popup-login__desc">Введите рабочую электронную почту, чтобы сбросить пароль и восстановить доступ на портал.</p>
+                  </div>
+                  <div class="login-form__content login-form__content-small">
+                    <div class="login-form__input">
+                      <div class="form-input">
+                        <label>
+                          <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Логин (рабочий E-mail)</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="login-form__footer login-form__footer-big">
+                    <input class="button button-bordered button-blue button-full" type="submit" value="Восстановить доступ">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-register">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-back login-form-button-prev login-form__back"></div>
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper">
+                <form class="form login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Регистрация</p>
+                    <div class="login-form__controls">
+                      <div class="login-form__controls-block">
+                        <p class="login-form__controls-text">Шаг <span class="login-form-controls-current">2</span>/<span class="login-form-controls-max">3</span></p>
+                      </div>
+                      <div class="login-form__controls-block">
+                        <div class="login-form__pagination">
+                          <div class="swiper-pagination login-form-pagination"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper login-form-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="login-form__content">
+                          <div class="login-form__input">
+                            <div class="form-input">
+                              <label>
+                                <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Логин (рабочий E-mail)</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="login-form__content">
+                          <div class="login-form__checkbox">
+                            <label class="checkbox"><span class="checkbox__wrapper">
+                                <input class="checkbox__input" type="checkbox"><span class="checkbox__checkmark"></span><span class="checkbox__label">Я согласен на обработку персональных данных в соответствии с <a href="#" class="link-blue">заявлением о конфиденциальности</a></span></span></label>
+                          </div>
+                          <div class="login-form__checkbox">
+                            <label class="checkbox"><span class="checkbox__wrapper">
+                                <input class="checkbox__input" type="checkbox"><span class="checkbox__checkmark"></span><span class="checkbox__label">Я согласен с <a href="#" class="link-blue">правилами портала</a></span></span></label>
+                          </div>
+                          <div class="login-form__checkbox">
+                            <label class="checkbox"><span class="checkbox__wrapper">
+                                <input class="checkbox__input" type="checkbox"><span class="checkbox__checkmark"></span><span class="checkbox__label">Я согласен на получение почтовой рассылки с анонсами курсов и информации по обучению от компании MONT</span></span></label>
+                          </div>
+                        </div>
+                        <div class="login-form__footer login-form__footer-big">
+                          <input class="button button-bordered button-blue button-full login-form-button-next" type="submit" value="Далее">
+                        </div>
+                        <div class="login-form__register">
+                          <p class="login-form__text">Уже были у нас? Тогда <a href='#' class="link-blue" data-popup="popup-register">войдите</a></p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="login-form__content">
+                          <div class="login-form__input">
+                            <div class="form-input">
+                              <label>
+                                <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Фамилия</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="login-form__input">
+                            <div class="form-input">
+                              <label>
+                                <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Имя</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="login-form__input">
+                            <div class="form-input">
+                              <label>
+                                <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Телефон</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="login-form__input">
+                            <div class="form-input">
+                              <label>
+                                <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Город</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="login-form__footer login-form__footer-big">
+                          <input class="button button-bordered button-blue button-full login-form-button-next" type="submit" value="Далее">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="login-form__content">
+                          <div class="login-form__input">
+                            <p class="login-form__text">Вам направлен пароль на указанную рабочую почту.</p>
+                          </div>
+                          <div class="login-form__input">
+                            <div class="form-input">
+                              <label>
+                                <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Пароль</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="login-form__input">
+                            <p class="login-form__text">Не пришло письмо?</p>
+                            <p class="login-form__text"><a href="#" class="link-blue">Отправить ещё раз</a> или <a href="#" class="link-blue">напишите нам</a></p>
+                          </div>
+                        </div>
+                        <div class="login-form__footer login-form__footer-big">
+                          <input class="button button-bordered button-blue button-full login-form-button-next" type="submit" value="Зарегистрироваться" data-popup="popup-thanks-code">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-thanks-code">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper">
+                <div class="login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Спасибо!</p>
+                    <p class="popup-login__desc">Ваш запрос на регистрацию направлен нам. Мы проинформируем вас о регистрации по почте.</p>
+                  </div>
+                  <div class="login-form__content"><img class="login-form__img" src="img/thanks-code.svg"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-thanks">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper">
+                <div class="login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Спасибо!</p>
+                    <p class="popup-login__desc popup-login__desc-center">Регистрация прошла успешно.</p>
+                  </div>
+                  <div class="login-form__content">
+                    <div class="login-form__img"><img class="login-form__img-item" src="img/thanks.svg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-thanks-forgot">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper popup-login__wrapper-big">
+                <div class="login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Спасибо!</p>
+                    <p class="popup-login__desc">Мы направили вам ссылку для восстановления пароля на почту. Перейдите по ней, чтобы завершить процесс входа.</p>
+                  </div>
+                  <div class="login-form__content">
+                    <div class="login-form__img"><img class="login-form__img-item" src="img/thanks-forgot.svg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-password">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper popup-login__wrapper-big">
+                <div class="login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Создайте новый пароль</p>
+                  </div>
+                  <div class="login-form__content">
+                    <div class="popup-login__wrapper">
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Новый пароль</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Повторите пароль</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="login-form__footer login-form__footer-big">
+                    <div class="popup-login__wrapper">
+                      <input class="button button-bordered button-blue button-full" type="submit" value="Войти">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-edit">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper popup-login__wrapper-big">
+                <form class="form login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Редактировать данные</p>
+                  </div>
+                  <div class="login-form__content">
+                    <div class="popup-login__wrapper">
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email" value="Иванов"><span class="form-input__label">Фамилия</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email" value="Иван"><span class="form-input__label">Имя</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email" value="+7 (999) 999 99 99"><span class="form-input__label">Телефон</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email" value="RedHat"><span class="form-input__label">Название компании</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email" value="Россия"><span class="form-input__label">Страна</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="login-form__input">
+                        <div class="form-input">
+                          <label>
+                            <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email" value="Москва"><span class="form-input__label">Город</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="login-form__footer">
+                    <div class="popup-login__wrapper">
+                      <input class="button button-bordered button-blue button-full" type="submit" value="Сохранить изменения" data-popup="popup-thanks-edit">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-login popup-thanks-edit">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-login__content">
+              <div class="popup-close popup-login__close"></div>
+              <div class="popup-login__wrapper">
+                <div class="login-form">
+                  <div class="login-form__header">
+                    <p class="title title_size-smallest title_color-blue title_position-center">Готово!</p>
+                    <p class="popup-login__desc popup-login__desc-center">Данные успешно сохранены.</p>
+                  </div>
+                  <div class="login-form__content">
+                    <div class="login-form__img"><img class="login-form__img-item" src="img/thanks-edit.svg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="back-top"><img class="back-top__img" src="img/triangle-blue.svg"></div>
+        <script src="libs/swiper/swiper.js"></script>
+        <script src="js/common.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
