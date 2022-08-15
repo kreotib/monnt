@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Главная</title>
+    <link rel="stylesheet" href="libs/datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="libs/noUiSlider/noUiSlider.css">
+    <link rel="stylesheet" href="libs/swiper/swiper.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="page-wrapper__header">
+        <header class="header">
+          <div class="header__wrapper">
+            <div class="container">
+              <div class="header__row">
+                <div class="header__block">
+                  <div class="header__logo">
+                    <div class="logo"><img class="logo__img" src="img/logo.svg"></div>
+                  </div>
+                </div>
+                <div class="header__block">
+                  <div class="header__nav">
+                    <nav class="header-nav">
+                      <ul class="header-nav__list">
+                        <li class="header-nav__item"><a class="header-nav__link active" href="#">Главная</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="#">Обучение</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="#">Мероприятия</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="#">Магазин</a></li>
+                      </ul>
+                      <div class="header-nav__divider">
+                        <div class="header-nav__divider-icon">
+                          <svg class="icon icon-profile-blue ">
+                            <use xlink:href="img/svg/sprite.svg#profile-blue"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul class="header-nav__list header-nav__list-mobile">
+                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="#">Моё обучение</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="#">Мои мероприятия</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="#">Личный кабинет</a></li>
+                        <li class="header-nav__item header-nav__item_enter"><a class="header-nav__link header-nav__link_enter" href="#" data-popup="popup-enter">Войти</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="header__profile">
+                    <div class="header__profile-block">
+                      <div class="notification trigger-wrapper"><a class="notification__icon notification__icon_new trigger-link" href="#">
+                          <svg class="icon icon-bell ">
+                            <use xlink:href="img/svg/sprite.svg#bell"></use>
+                          </svg></a>
+                        <div class="notification__content trigger-block">
+                          <div class="notification-content">
+                            <div class="notification-content__wrapper">
+                              <div class="notification-content__close trigger-link">
+                                <div class="notification-close"></div>
+                              </div>
+                              <div class="notification-content__header">
+                                <p class="title title_color-blue title_size-smallest notification-content__title">Уведомления</p><a class="link-blue notification-content__link" href="#">Отметить все прочитанными</a>
+                              </div>
+                              <div class="notification-content__block swiper notification-content-slider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <div class="notification__item">
+                                      <div class="notification-item">
+                                        <div class="notification-item__wrapper">
+                                          <div class="notification-item__header">
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__text">Курс <span class="notification-item__title">Data-driven компетенции с Visiology</span></p>
+                                              <p class="notification-item__text notification-item__date">21.05.2022, 10:00</p>
+                                            </div>
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__text">Урок <span class="notification-item__title">4</span></p>
+                                            </div>
+                                          </div>
+                                          <div class="notification-item__content">
+                                            <p class="notification-item__text">Ответ куратора: “Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos! Lorem ipsum dolor sit amet.</p>
+                                          </div>
+                                          <div class="notification-item__footer"><a class="notification-item__link" href="#">Подробнее</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="notification__item">
+                                      <div class="notification-item notification-item_undread">
+                                        <div class="notification-item__wrapper">
+                                          <div class="notification-item__header">
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__text">Курс <span class="notification-item__title">Data-driven компетенции с Visiology</span></p>
+                                              <p class="notification-item__text notification-item__date">21.05.2022, 10:00</p>
+                                            </div>
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__text">Урок <span class="notification-item__title">4</span></p>
+                                            </div>
+                                          </div>
+                                          <div class="notification-item__content">
+                                            <p class="notification-item__text">Ответ куратора: “Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos! Lorem ipsum dolor sit amet.</p>
+                                          </div>
+                                          <div class="notification-item__footer"><a class="notification-item__link" href="#">Подробнее</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="notification__item">
+                                      <div class="notification-item">
+                                        <div class="notification-item__wrapper">
+                                          <div class="notification-item__header">
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__title">В разделе «<a href='#'>Моё обучение</a>» появились новые курсы</p>
+                                              <p class="notification-item__text notification-item__date">21.05.2022, 10:00</p>
+                                            </div>
+                                          </div>
+                                          <div class="notification-item__content">
+                                            <p class="notification-item__text">Ответ куратора: “Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos! Lorem ipsum dolor sit amet.</p>
+                                          </div>
+                                          <div class="notification-item__footer"><a class="notification-item__link" href="#">Подробнее</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header__profile-block header__profile-block_profile">
+                      <div class="header-profile trigger-wrapper">
+                        <div class="header-profile__wrapper">
+                          <div class="header-profile__wrapper-block"><a class="header-profile__link trigger-link" href="#"><span class="header-profile__link-icon">
+                                <svg class="icon icon-profile ">
+                                  <use xlink:href="img/svg/sprite.svg#profile"></use>
+                                </svg></span></a></div>
+                          <div class="header-profile__wrapper-block">
+                            <ul class="header-profile__list trigger-block">
+                              <li class="header-profile__list-item"><a class="header-profile__list-link" href="#">Моё обучение</a></li>
+                              <li class="header-profile__list-item"><a class="header-profile__list-link" href="#">Мои мероприятия</a></li>
+                              <li class="header-profile__list-item"><a class="header-profile__list-link" href="#">Личный кабинет</a></li>
+                              <li class="header-profile__list-item"><a class="header-profile__list-link header-profile__list-link_enter" href="#" data-popup="popup-enter">Войти</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header__profile-block header__profile-block_burger">
+                      <div class="burger">
+                        <div class="burger__item"></div>
+                        <div class="burger__item"></div>
+                        <div class="burger__item"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="page-wrapper__content">
+        <div class="page-error">
+          <div class="page-error__wrapper">
+            <div class="container">
+              <div class="page-error__content">
+                <div class="page-error__header">
+                  <p class="title title_size-medium title_position-center title_color-blue">Упс! Ошибка 500</p>
+                  <div class="page-error__desc">
+                    <p class="page-error__text">Сервер не может обработать запрос  к сайту, на странице которого вы находитесь. Подождите или попробуйте повторить запрос.</p>
+                  </div>
+                </div>
+                <div class="page-error__img"><img class="page-error__img-item" src="img/500.svg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-wrapper__footer">
+      </div>
+    </div>
+  </body>
+</html>

@@ -111,6 +111,20 @@ const popupClose = () => {
     });
 }
 
+const createFileBlock = (text) => {
+    const blockFile = document.createElement('span'),
+        blockFileClose = document.createElement('span');
+
+    blockFile.classList.add('file-input-text');
+    blockFile.textContent = text;
+
+    blockFileClose.classList.add('file-input-close');
+
+    blockFile.append(blockFileClose);
+
+    return blockFile;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     tabsInit();
 
@@ -147,10 +161,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
 
                 const triggerWrapper = trigger.closest('.trigger-wrapper'),
-                    triggerBlock = triggerWrapper.querySelector('.trigger-block');
+                    triggerBlock = triggerWrapper.querySelectorAll('.trigger-block');
 
                 trigger.classList.toggle('active');
-                triggerBlock.classList.toggle('active');
+                triggerBlock.forEach(element => {
+                    element.classList.toggle('active');
+                })
             });
         });
     }
@@ -275,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }),
         loginFormSlider = new Swiper(".login-form-slider", {
-            autoHeight:true,
+            autoHeight: true,
             pagination: {
                 el: ".login-form-pagination",
                 type: "progressbar",
@@ -297,18 +313,31 @@ document.addEventListener('DOMContentLoaded', () => {
         cardSlider = new Swiper(".card-slider", {
             slidesPerView: 1,
             spaceBetween: 16,
-            breakpoints:{
-              600:{
-                slidesPerView:2,
-              },
-              1280:{
-                  slidesPerView:4,
-              }
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                },
+                1280: {
+                    slidesPerView: 4,
+                }
             },
             navigation: {
                 nextEl: ".card-slider-button-next",
                 prevEl: ".card-slider-button-prev",
             },
+        }),
+        notificationSlider = new Swiper(".notification-content-slider", {
+            slidesPerView: 'auto',
+            direction: 'vertical',
+            freeMode: true,
+            mousewheel: {
+                invert: false,
+            },
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                draggable: true,
+            },
+
         });
 
     loginFormSlider.on('slideChange', function () {
@@ -343,6 +372,159 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 element.classList.add('active');
             });
+        });
+    }
+
+    const fileInput = document.querySelectorAll('.file-input');
+
+    if (fileInput.length > 0) {
+        fileInput.forEach(element => {
+            const fileInputItem = element.querySelector('.file-input-item'),
+                fileInputFiles = element.querySelector('.file-input-files');
+
+            fileInputItem.addEventListener('change', () => {
+                fileInputFiles.innerHTML = '';
+                fileInputFiles.append(createFileBlock(fileInputItem.files[0].name));
+
+                const fileInputClose = element.querySelector('.file-input-close');
+
+                fileInputClose.addEventListener('click', () => {
+                    fileInputItem.value = '';
+
+                    fileInputFiles.innerHTML = '';
+                });
+            });
+        });
+    }
+
+    const rangeSliderWrapper = document.querySelector('.range-slider-wrapper');
+
+    if (rangeSliderWrapper) {
+        const rangeSlider = rangeSliderWrapper.querySelector('.range-slider'),
+            rangeSliderInputs = rangeSliderWrapper.querySelectorAll('.filter-block__range-input-item');
+        noUiSlider.create(rangeSlider, {
+            connect: true,
+            behaviour: 'tap',
+            start: [0, 50],
+            step: 1,
+            range: {
+                // Starting at 500, step the value by 500,
+                // until 4000 is reached. From there, step by 1000.
+                'min': [0],
+                'max': [100]
+            },
+            format: {
+                // 'to' the formatted value. Receives a number.
+                to: function (value) {
+                    return value;
+                },
+                // 'from' the formatted value.
+                // Receives a string, should return a number.
+                from: function (value) {
+                    return Number(value.replace(',-', ''));
+                }
+            }
+        });
+
+        rangeSlider.noUiSlider.on('update', function (values, handle, unencoded, isTap, positions) {
+            rangeSliderInputs[handle].value = values[handle];
+        });
+
+        rangeSliderInputs.forEach((element, index) => {
+            element.addEventListener('change', () => {
+                rangeSlider.noUiSlider.set(rangeSliderInputs[0].value, rangeSliderInputs[1].value);
+            });
+        });
+    }
+
+    const filterBlockDate = document.querySelector('.filter-block__date-input');
+
+    if (filterBlockDate) {
+        const datepickerFirst = datepicker('.date-input', {
+                customMonths: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+                customDays: ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'],
+                formatter: (input, date, instance) => {
+                    const value = date.toLocaleDateString();
+                    input.value = value;
+                },
+
+                onShow: instance => {
+                    datepickerFirst.parent.classList.add('active');
+                },
+                onHide: instance => {
+                    datepickerFirst.parent.classList.remove('active');
+                },
+            }),
+            datepickerSecond = datepicker('.date-input-second', {
+                customMonths: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+                customDays: ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'],
+                formatter: (input, date, instance) => {
+                    const value = date.toLocaleDateString();
+                    input.value = value;
+                },
+                position: 'br',
+                onShow: instance => {
+                    datepickerSecond.parent.classList.add('active');
+                },
+                onHide: instance => {
+                    datepickerSecond.parent.classList.remove('active');
+                },
+            });
+    }
+
+    const pie = document.querySelector('.pie');
+
+    if(pie){
+        const circle = new CircularProgressBar("pie");
+        circle.initial();
+    }
+
+    const inputWrappersLinks = document.querySelectorAll('.input-wrappers-link');
+
+    if(inputWrappersLinks.length > 0){
+        inputWrappersLinks.forEach(element=>{
+           element.addEventListener('click',(e)=>{
+               e.preventDefault();
+
+
+               element.classList.toggle('active');
+
+               const inputWrapper = element.closest('.input-wrappers'),
+                   inputWrapperItems = inputWrapper.querySelectorAll('.input-wrappers-item');
+
+               inputWrapperItems.forEach(inputItem=>{
+
+                   element.classList.contains('active') ? inputItem.checked = true : inputItem.checked = false;
+               });
+           });
+        });
+    }
+
+    const filterListLinks = document.querySelectorAll('.filter__list-close');
+
+    if(filterListLinks.length > 0){
+        filterListLinks.forEach(element=>{
+           element.addEventListener('click',()=>{
+
+               const elementParent = element.closest('.filter__list-item');
+
+               elementParent.classList.add('hidden');
+           });
+        });
+    }
+
+    const filterListLinkReset = document.querySelectorAll('.filter__list-link-reset');
+
+    if(filterListLinkReset.length > 0){
+        filterListLinkReset.forEach(element=>{
+           element.addEventListener('click',()=>{
+               const filterList = element.closest('.filter-list'),
+                   filterListItems = filterList.querySelectorAll('.filter__list-item');
+
+               filterListItems.forEach(filterElement=>{
+                   filterElement.classList.add('hidden');
+               });
+           });
         });
     }
 });

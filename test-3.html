@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Главная</title>
+    <link rel="stylesheet" href="libs/datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="libs/noUiSlider/noUiSlider.css">
     <link rel="stylesheet" href="libs/swiper/swiper.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -45,10 +47,84 @@
                   </div>
                   <div class="header__profile">
                     <div class="header__profile-block">
-                      <div class="notification"><a class="notification__icon notification__icon_new" href="#">
+                      <div class="notification trigger-wrapper"><a class="notification__icon notification__icon_new trigger-link" href="#">
                           <svg class="icon icon-bell ">
                             <use xlink:href="img/svg/sprite.svg#bell"></use>
-                          </svg></a></div>
+                          </svg></a>
+                        <div class="notification__content trigger-block">
+                          <div class="notification-content">
+                            <div class="notification-content__wrapper">
+                              <div class="notification-content__close trigger-link">
+                                <div class="notification-close"></div>
+                              </div>
+                              <div class="notification-content__header">
+                                <p class="title title_color-blue title_size-smallest notification-content__title">Уведомления</p><a class="link-blue notification-content__link" href="#">Отметить все прочитанными</a>
+                              </div>
+                              <div class="notification-content__block swiper notification-content-slider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <div class="notification__item">
+                                      <div class="notification-item">
+                                        <div class="notification-item__wrapper">
+                                          <div class="notification-item__header">
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__text">Курс <span class="notification-item__title">Data-driven компетенции с Visiology</span></p>
+                                              <p class="notification-item__text notification-item__date">21.05.2022, 10:00</p>
+                                            </div>
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__text">Урок <span class="notification-item__title">4</span></p>
+                                            </div>
+                                          </div>
+                                          <div class="notification-item__content">
+                                            <p class="notification-item__text">Ответ куратора: “Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos! Lorem ipsum dolor sit amet.</p>
+                                          </div>
+                                          <div class="notification-item__footer"><a class="notification-item__link" href="#">Подробнее</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="notification__item">
+                                      <div class="notification-item notification-item_undread">
+                                        <div class="notification-item__wrapper">
+                                          <div class="notification-item__header">
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__text">Курс <span class="notification-item__title">Data-driven компетенции с Visiology</span></p>
+                                              <p class="notification-item__text notification-item__date">21.05.2022, 10:00</p>
+                                            </div>
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__text">Урок <span class="notification-item__title">4</span></p>
+                                            </div>
+                                          </div>
+                                          <div class="notification-item__content">
+                                            <p class="notification-item__text">Ответ куратора: “Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos! Lorem ipsum dolor sit amet.</p>
+                                          </div>
+                                          <div class="notification-item__footer"><a class="notification-item__link" href="#">Подробнее</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="notification__item">
+                                      <div class="notification-item">
+                                        <div class="notification-item__wrapper">
+                                          <div class="notification-item__header">
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__title">В разделе «<a href='#'>Моё обучение</a>» появились новые курсы</p>
+                                              <p class="notification-item__text notification-item__date">21.05.2022, 10:00</p>
+                                            </div>
+                                          </div>
+                                          <div class="notification-item__content">
+                                            <p class="notification-item__text">Ответ куратора: “Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos! Lorem ipsum dolor sit amet.</p>
+                                          </div>
+                                          <div class="notification-item__footer"><a class="notification-item__link" href="#">Подробнее</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="header__profile-block header__profile-block_profile">
                       <div class="header-profile trigger-wrapper">

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Главная</title>
+    <link rel="stylesheet" href="libs/datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="libs/noUiSlider/noUiSlider.css">
     <link rel="stylesheet" href="libs/swiper/swiper.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -45,10 +47,84 @@
                   </div>
                   <div class="header__profile">
                     <div class="header__profile-block">
-                      <div class="notification"><a class="notification__icon notification__icon_new" href="#">
+                      <div class="notification trigger-wrapper"><a class="notification__icon notification__icon_new trigger-link" href="#">
                           <svg class="icon icon-bell ">
                             <use xlink:href="img/svg/sprite.svg#bell"></use>
-                          </svg></a></div>
+                          </svg></a>
+                        <div class="notification__content trigger-block">
+                          <div class="notification-content">
+                            <div class="notification-content__wrapper">
+                              <div class="notification-content__close trigger-link">
+                                <div class="notification-close"></div>
+                              </div>
+                              <div class="notification-content__header">
+                                <p class="title title_color-blue title_size-smallest notification-content__title">Уведомления</p><a class="link-blue notification-content__link" href="#">Отметить все прочитанными</a>
+                              </div>
+                              <div class="notification-content__block swiper notification-content-slider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <div class="notification__item">
+                                      <div class="notification-item">
+                                        <div class="notification-item__wrapper">
+                                          <div class="notification-item__header">
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__text">Курс <span class="notification-item__title">Data-driven компетенции с Visiology</span></p>
+                                              <p class="notification-item__text notification-item__date">21.05.2022, 10:00</p>
+                                            </div>
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__text">Урок <span class="notification-item__title">4</span></p>
+                                            </div>
+                                          </div>
+                                          <div class="notification-item__content">
+                                            <p class="notification-item__text">Ответ куратора: “Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos! Lorem ipsum dolor sit amet.</p>
+                                          </div>
+                                          <div class="notification-item__footer"><a class="notification-item__link" href="#">Подробнее</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="notification__item">
+                                      <div class="notification-item notification-item_undread">
+                                        <div class="notification-item__wrapper">
+                                          <div class="notification-item__header">
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__text">Курс <span class="notification-item__title">Data-driven компетенции с Visiology</span></p>
+                                              <p class="notification-item__text notification-item__date">21.05.2022, 10:00</p>
+                                            </div>
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__text">Урок <span class="notification-item__title">4</span></p>
+                                            </div>
+                                          </div>
+                                          <div class="notification-item__content">
+                                            <p class="notification-item__text">Ответ куратора: “Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos! Lorem ipsum dolor sit amet.</p>
+                                          </div>
+                                          <div class="notification-item__footer"><a class="notification-item__link" href="#">Подробнее</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="notification__item">
+                                      <div class="notification-item">
+                                        <div class="notification-item__wrapper">
+                                          <div class="notification-item__header">
+                                            <div class="notification-item__header-block">
+                                              <p class="notification-item__title">В разделе «<a href='#'>Моё обучение</a>» появились новые курсы</p>
+                                              <p class="notification-item__text notification-item__date">21.05.2022, 10:00</p>
+                                            </div>
+                                          </div>
+                                          <div class="notification-item__content">
+                                            <p class="notification-item__text">Ответ куратора: “Lorem ipsum dolor sit amet. Eos officia placeat eos libero excepturi molestiae inventore ut laudantium soluta ex eaque sunt est quibusdam error aut nulla assumenda! Ab error doloribus eos aspernatur minus est rerum quos! Lorem ipsum dolor sit amet.</p>
+                                          </div>
+                                          <div class="notification-item__footer"><a class="notification-item__link" href="#">Подробнее</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="header__profile-block header__profile-block_profile">
                       <div class="header-profile trigger-wrapper">
@@ -405,9 +481,11 @@
                                           </div>
                                           <div class="lesson-form__footer">
                                             <div class="lesson-form__footer-block">
-                                              <label class="attach-input">
-                                                <input class="attach-input__item" type="file"><span class="attach-input__checkmark">Прикрепить файл <span>(до 300 Кб)</span></span>
-                                              </label>
+                                              <div class="file-input"><span class="attach-input__file file-input-files"></span>
+                                                <label class="attach-input">
+                                                  <input class="attach-input__item file-input-item" type="file"><span class="attach-input__checkmark">Прикрепить файл <span>(до 300 Кб)</span></span>
+                                                </label>
+                                              </div>
                                             </div>
                                             <div class="lesson-form__footer-block">
                                               <input class="button button-blue button-bordered lesson-form__button" type="submit" value="Отправить">
@@ -557,7 +635,11 @@
         <div class="popup popup-login popup-enter">
           <div class="popup-wrapper popup__wrapper">
             <div class="popup-login__content">
-              <div class="popup-close popup-login__close"></div>
+              <div class="popup-close popup-login__close"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#F8F8FF"/>
+<path d="M16.8164 15.9725L20.8664 11.9225C20.9574 11.8162 21.005 11.6795 20.9996 11.5397C20.9942 11.3998 20.9362 11.2672 20.8373 11.1683C20.7383 11.0693 20.6057 11.0114 20.4659 11.006C20.3261 11.0006 20.1894 11.0481 20.0831 11.1391L16.0331 15.1891L11.9831 11.1336C11.8768 11.0426 11.7401 10.995 11.6003 11.0004C11.4605 11.0058 11.3278 11.0638 11.2289 11.1627C11.1299 11.2617 11.072 11.3943 11.0666 11.5341C11.0612 11.6739 11.1087 11.8106 11.1997 11.9169L15.2497 15.9725L11.1942 20.0225C11.136 20.0723 11.0888 20.1336 11.0555 20.2025C11.0221 20.2714 11.0034 20.3465 11.0004 20.423C10.9975 20.4995 11.0104 20.5758 11.0383 20.6471C11.0662 20.7184 11.1086 20.7831 11.1627 20.8373C11.2169 20.8914 11.2816 20.9338 11.3529 20.9617C11.4242 20.9896 11.5005 21.0025 11.577 20.9996C11.6535 20.9966 11.7286 20.9779 11.7975 20.9445C11.8664 20.9112 11.9277 20.864 11.9775 20.8058L16.0331 16.7558L20.0831 20.8058C20.1894 20.8968 20.3261 20.9444 20.4659 20.939C20.6057 20.9336 20.7383 20.8756 20.8373 20.7767C20.9362 20.6777 20.9942 20.5451 20.9996 20.4053C21.005 20.2655 20.9574 20.1288 20.8664 20.0225L16.8164 15.9725Z" fill="#6776FF"/>
+</svg>
+              </div>
               <div class="popup-login__wrapper">
                 <form class="form login-form">
                   <div class="login-form__header">
@@ -565,15 +647,32 @@
                   </div>
                   <div class="login-form__content">
                     <div class="login-form__input">
-                      <div class="form-input">
-                        <input class="form-input__item form-input__item-small form-input__item-promt" id="email" required type="email" name="email">
-                        <label class="form-input__label" for="email">Логин (рабочий E-mail)</label>
+                      <div class="form-input error">
+                        <label>
+                          <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email" value="mail"><span class="form-input__label" for="email">Логин (рабочий E-mail)</span>
+                        </label>
+                        <div class="form-input__help">
+                          <div class="help trigger-wrapper">
+                            <div class="help__icon trigger-link"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="10" cy="10" r="9.5" stroke="#6776FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.35656 8.0935C7.14356 8.0935 6.97106 7.91575 7.00406 7.70575C7.21031 6.43 8.18231 5.5 9.86906 5.5C11.5566 5.5 12.6943 6.52 12.6943 7.91125C12.6943 8.91925 12.1956 9.62725 11.3518 10.141C10.5268 10.6352 10.2913 10.9795 10.2913 11.6485V11.671C10.2913 11.7705 10.2518 11.8658 10.1815 11.9362C10.1112 12.0065 10.0158 12.046 9.91631 12.046H9.33881C9.24 12.046 9.14519 12.007 9.07497 11.9375C9.00475 11.868 8.9648 11.7736 8.96381 11.6747L8.96156 11.5247C8.92931 10.609 9.31931 10.024 10.1953 9.49075C10.9678 9.01675 11.2431 8.6395 11.2431 7.96975C11.2431 7.2355 10.6746 6.69625 9.79856 6.69625C9.04181 6.69625 8.51606 7.093 8.34506 7.74775C8.29556 7.93825 8.13656 8.0935 7.94006 8.0935H7.35731H7.35656ZM9.62231 14.5C10.0888 14.5 10.4436 14.1445 10.4436 13.6825C10.4436 13.219 10.0888 12.8635 9.62231 12.8635C9.16781 12.8635 8.80706 13.219 8.80706 13.6818C8.80706 14.1445 9.16781 14.5 9.62231 14.5Z" fill="#6776FF"/>
+</svg>
+                            </div>
+                            <div class="help__content help__content-right trigger-block">
+                              <p class="help__text">Чтобы узнать ваш код обратитесь к сотруднику MONT. Это ускорит регистрацию, и Вам не нужно будет ждать валидации в системе.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-input__error">
+                          <p>Данной почты нет в базе, проверьте правильность ввода или <a href='#' class="link-blue">зарегистрируйтесь</a></p>
+                        </div>
                       </div>
                     </div>
                     <div class="login-form__input">
                       <div class="form-input">
-                        <input class="form-input__item form-input__item-small form-input__item-promt" id="password" required type="password">
-                        <label class="form-input__label" for="password">Пароль</label>
+                        <label>
+                          <input class="form-input__item form-input__item-small form-input__item-promt" required type="password"><span class="form-input__label" for="password">Пароль</span>
+                        </label>
                       </div>
                     </div>
                     <div class="login-form__input"><a class="link-blue" href="#" data-popup="popup-forgot">Забыли пароль?</a></div>
@@ -592,7 +691,11 @@
         <div class="popup popup-login popup-forgot">
           <div class="popup-wrapper popup__wrapper">
             <div class="popup-login__content">
-              <div class="popup-close popup-login__close"></div>
+              <div class="popup-close popup-login__close"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#F8F8FF"/>
+<path d="M16.8164 15.9725L20.8664 11.9225C20.9574 11.8162 21.005 11.6795 20.9996 11.5397C20.9942 11.3998 20.9362 11.2672 20.8373 11.1683C20.7383 11.0693 20.6057 11.0114 20.4659 11.006C20.3261 11.0006 20.1894 11.0481 20.0831 11.1391L16.0331 15.1891L11.9831 11.1336C11.8768 11.0426 11.7401 10.995 11.6003 11.0004C11.4605 11.0058 11.3278 11.0638 11.2289 11.1627C11.1299 11.2617 11.072 11.3943 11.0666 11.5341C11.0612 11.6739 11.1087 11.8106 11.1997 11.9169L15.2497 15.9725L11.1942 20.0225C11.136 20.0723 11.0888 20.1336 11.0555 20.2025C11.0221 20.2714 11.0034 20.3465 11.0004 20.423C10.9975 20.4995 11.0104 20.5758 11.0383 20.6471C11.0662 20.7184 11.1086 20.7831 11.1627 20.8373C11.2169 20.8914 11.2816 20.9338 11.3529 20.9617C11.4242 20.9896 11.5005 21.0025 11.577 20.9996C11.6535 20.9966 11.7286 20.9779 11.7975 20.9445C11.8664 20.9112 11.9277 20.864 11.9775 20.8058L16.0331 16.7558L20.0831 20.8058C20.1894 20.8968 20.3261 20.9444 20.4659 20.939C20.6057 20.9336 20.7383 20.8756 20.8373 20.7767C20.9362 20.6777 20.9942 20.5451 20.9996 20.4053C21.005 20.2655 20.9574 20.1288 20.8664 20.0225L16.8164 15.9725Z" fill="#6776FF"/>
+</svg>
+              </div>
               <div class="popup-login__wrapper">
                 <form class="form login-form">
                   <div class="login-form__header">
@@ -619,8 +722,16 @@
         <div class="popup popup-login popup-register">
           <div class="popup-wrapper popup__wrapper">
             <div class="popup-login__content">
-              <div class="popup-back login-form-button-prev login-form__back"></div>
-              <div class="popup-close popup-login__close"></div>
+              <div class="popup-back login-form-button-prev login-form__back"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#F8F8FF"/>
+<path d="M15.3125 11L10.5 16L15.3125 21M10.5 16H21.5" stroke="#6776FF" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+              </div>
+              <div class="popup-close popup-login__close"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#F8F8FF"/>
+<path d="M16.8164 15.9725L20.8664 11.9225C20.9574 11.8162 21.005 11.6795 20.9996 11.5397C20.9942 11.3998 20.9362 11.2672 20.8373 11.1683C20.7383 11.0693 20.6057 11.0114 20.4659 11.006C20.3261 11.0006 20.1894 11.0481 20.0831 11.1391L16.0331 15.1891L11.9831 11.1336C11.8768 11.0426 11.7401 10.995 11.6003 11.0004C11.4605 11.0058 11.3278 11.0638 11.2289 11.1627C11.1299 11.2617 11.072 11.3943 11.0666 11.5341C11.0612 11.6739 11.1087 11.8106 11.1997 11.9169L15.2497 15.9725L11.1942 20.0225C11.136 20.0723 11.0888 20.1336 11.0555 20.2025C11.0221 20.2714 11.0034 20.3465 11.0004 20.423C10.9975 20.4995 11.0104 20.5758 11.0383 20.6471C11.0662 20.7184 11.1086 20.7831 11.1627 20.8373C11.2169 20.8914 11.2816 20.9338 11.3529 20.9617C11.4242 20.9896 11.5005 21.0025 11.577 20.9996C11.6535 20.9966 11.7286 20.9779 11.7975 20.9445C11.8664 20.9112 11.9277 20.864 11.9775 20.8058L16.0331 16.7558L20.0831 20.8058C20.1894 20.8968 20.3261 20.9444 20.4659 20.939C20.6057 20.9336 20.7383 20.8756 20.8373 20.7767C20.9362 20.6777 20.9942 20.5451 20.9996 20.4053C21.005 20.2655 20.9574 20.1288 20.8664 20.0225L16.8164 15.9725Z" fill="#6776FF"/>
+</svg>
+              </div>
               <div class="popup-login__wrapper">
                 <form class="form login-form">
                   <div class="login-form__header">
@@ -671,6 +782,13 @@
                       </div>
                       <div class="swiper-slide">
                         <div class="login-form__content">
+                          <div class="login-form__input">
+                            <div class="form-input">
+                              <label>
+                                <input class="form-input__item form-input__item-small form-input__item-promt" required type="text" name="email"><span class="form-input__label">Код Партнёра</span>
+                              </label>
+                            </div>
+                          </div>
                           <div class="login-form__input">
                             <div class="form-input">
                               <label>
@@ -735,7 +853,11 @@
         <div class="popup popup-login popup-thanks-code">
           <div class="popup-wrapper popup__wrapper">
             <div class="popup-login__content">
-              <div class="popup-close popup-login__close"></div>
+              <div class="popup-close popup-login__close"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#F8F8FF"/>
+<path d="M16.8164 15.9725L20.8664 11.9225C20.9574 11.8162 21.005 11.6795 20.9996 11.5397C20.9942 11.3998 20.9362 11.2672 20.8373 11.1683C20.7383 11.0693 20.6057 11.0114 20.4659 11.006C20.3261 11.0006 20.1894 11.0481 20.0831 11.1391L16.0331 15.1891L11.9831 11.1336C11.8768 11.0426 11.7401 10.995 11.6003 11.0004C11.4605 11.0058 11.3278 11.0638 11.2289 11.1627C11.1299 11.2617 11.072 11.3943 11.0666 11.5341C11.0612 11.6739 11.1087 11.8106 11.1997 11.9169L15.2497 15.9725L11.1942 20.0225C11.136 20.0723 11.0888 20.1336 11.0555 20.2025C11.0221 20.2714 11.0034 20.3465 11.0004 20.423C10.9975 20.4995 11.0104 20.5758 11.0383 20.6471C11.0662 20.7184 11.1086 20.7831 11.1627 20.8373C11.2169 20.8914 11.2816 20.9338 11.3529 20.9617C11.4242 20.9896 11.5005 21.0025 11.577 20.9996C11.6535 20.9966 11.7286 20.9779 11.7975 20.9445C11.8664 20.9112 11.9277 20.864 11.9775 20.8058L16.0331 16.7558L20.0831 20.8058C20.1894 20.8968 20.3261 20.9444 20.4659 20.939C20.6057 20.9336 20.7383 20.8756 20.8373 20.7767C20.9362 20.6777 20.9942 20.5451 20.9996 20.4053C21.005 20.2655 20.9574 20.1288 20.8664 20.0225L16.8164 15.9725Z" fill="#6776FF"/>
+</svg>
+              </div>
               <div class="popup-login__wrapper">
                 <div class="login-form">
                   <div class="login-form__header">
@@ -751,7 +873,11 @@
         <div class="popup popup-login popup-thanks">
           <div class="popup-wrapper popup__wrapper">
             <div class="popup-login__content">
-              <div class="popup-close popup-login__close"></div>
+              <div class="popup-close popup-login__close"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#F8F8FF"/>
+<path d="M16.8164 15.9725L20.8664 11.9225C20.9574 11.8162 21.005 11.6795 20.9996 11.5397C20.9942 11.3998 20.9362 11.2672 20.8373 11.1683C20.7383 11.0693 20.6057 11.0114 20.4659 11.006C20.3261 11.0006 20.1894 11.0481 20.0831 11.1391L16.0331 15.1891L11.9831 11.1336C11.8768 11.0426 11.7401 10.995 11.6003 11.0004C11.4605 11.0058 11.3278 11.0638 11.2289 11.1627C11.1299 11.2617 11.072 11.3943 11.0666 11.5341C11.0612 11.6739 11.1087 11.8106 11.1997 11.9169L15.2497 15.9725L11.1942 20.0225C11.136 20.0723 11.0888 20.1336 11.0555 20.2025C11.0221 20.2714 11.0034 20.3465 11.0004 20.423C10.9975 20.4995 11.0104 20.5758 11.0383 20.6471C11.0662 20.7184 11.1086 20.7831 11.1627 20.8373C11.2169 20.8914 11.2816 20.9338 11.3529 20.9617C11.4242 20.9896 11.5005 21.0025 11.577 20.9996C11.6535 20.9966 11.7286 20.9779 11.7975 20.9445C11.8664 20.9112 11.9277 20.864 11.9775 20.8058L16.0331 16.7558L20.0831 20.8058C20.1894 20.8968 20.3261 20.9444 20.4659 20.939C20.6057 20.9336 20.7383 20.8756 20.8373 20.7767C20.9362 20.6777 20.9942 20.5451 20.9996 20.4053C21.005 20.2655 20.9574 20.1288 20.8664 20.0225L16.8164 15.9725Z" fill="#6776FF"/>
+</svg>
+              </div>
               <div class="popup-login__wrapper">
                 <div class="login-form">
                   <div class="login-form__header">
@@ -769,7 +895,11 @@
         <div class="popup popup-login popup-thanks-forgot">
           <div class="popup-wrapper popup__wrapper">
             <div class="popup-login__content">
-              <div class="popup-close popup-login__close"></div>
+              <div class="popup-close popup-login__close"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#F8F8FF"/>
+<path d="M16.8164 15.9725L20.8664 11.9225C20.9574 11.8162 21.005 11.6795 20.9996 11.5397C20.9942 11.3998 20.9362 11.2672 20.8373 11.1683C20.7383 11.0693 20.6057 11.0114 20.4659 11.006C20.3261 11.0006 20.1894 11.0481 20.0831 11.1391L16.0331 15.1891L11.9831 11.1336C11.8768 11.0426 11.7401 10.995 11.6003 11.0004C11.4605 11.0058 11.3278 11.0638 11.2289 11.1627C11.1299 11.2617 11.072 11.3943 11.0666 11.5341C11.0612 11.6739 11.1087 11.8106 11.1997 11.9169L15.2497 15.9725L11.1942 20.0225C11.136 20.0723 11.0888 20.1336 11.0555 20.2025C11.0221 20.2714 11.0034 20.3465 11.0004 20.423C10.9975 20.4995 11.0104 20.5758 11.0383 20.6471C11.0662 20.7184 11.1086 20.7831 11.1627 20.8373C11.2169 20.8914 11.2816 20.9338 11.3529 20.9617C11.4242 20.9896 11.5005 21.0025 11.577 20.9996C11.6535 20.9966 11.7286 20.9779 11.7975 20.9445C11.8664 20.9112 11.9277 20.864 11.9775 20.8058L16.0331 16.7558L20.0831 20.8058C20.1894 20.8968 20.3261 20.9444 20.4659 20.939C20.6057 20.9336 20.7383 20.8756 20.8373 20.7767C20.9362 20.6777 20.9942 20.5451 20.9996 20.4053C21.005 20.2655 20.9574 20.1288 20.8664 20.0225L16.8164 15.9725Z" fill="#6776FF"/>
+</svg>
+              </div>
               <div class="popup-login__wrapper popup-login__wrapper-big">
                 <div class="login-form">
                   <div class="login-form__header">
@@ -787,7 +917,11 @@
         <div class="popup popup-login popup-password">
           <div class="popup-wrapper popup__wrapper">
             <div class="popup-login__content">
-              <div class="popup-close popup-login__close"></div>
+              <div class="popup-close popup-login__close"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#F8F8FF"/>
+<path d="M16.8164 15.9725L20.8664 11.9225C20.9574 11.8162 21.005 11.6795 20.9996 11.5397C20.9942 11.3998 20.9362 11.2672 20.8373 11.1683C20.7383 11.0693 20.6057 11.0114 20.4659 11.006C20.3261 11.0006 20.1894 11.0481 20.0831 11.1391L16.0331 15.1891L11.9831 11.1336C11.8768 11.0426 11.7401 10.995 11.6003 11.0004C11.4605 11.0058 11.3278 11.0638 11.2289 11.1627C11.1299 11.2617 11.072 11.3943 11.0666 11.5341C11.0612 11.6739 11.1087 11.8106 11.1997 11.9169L15.2497 15.9725L11.1942 20.0225C11.136 20.0723 11.0888 20.1336 11.0555 20.2025C11.0221 20.2714 11.0034 20.3465 11.0004 20.423C10.9975 20.4995 11.0104 20.5758 11.0383 20.6471C11.0662 20.7184 11.1086 20.7831 11.1627 20.8373C11.2169 20.8914 11.2816 20.9338 11.3529 20.9617C11.4242 20.9896 11.5005 21.0025 11.577 20.9996C11.6535 20.9966 11.7286 20.9779 11.7975 20.9445C11.8664 20.9112 11.9277 20.864 11.9775 20.8058L16.0331 16.7558L20.0831 20.8058C20.1894 20.8968 20.3261 20.9444 20.4659 20.939C20.6057 20.9336 20.7383 20.8756 20.8373 20.7767C20.9362 20.6777 20.9942 20.5451 20.9996 20.4053C21.005 20.2655 20.9574 20.1288 20.8664 20.0225L16.8164 15.9725Z" fill="#6776FF"/>
+</svg>
+              </div>
               <div class="popup-login__wrapper popup-login__wrapper-big">
                 <div class="login-form">
                   <div class="login-form__header">
@@ -824,7 +958,11 @@
         <div class="popup popup-login popup-edit">
           <div class="popup-wrapper popup__wrapper">
             <div class="popup-login__content">
-              <div class="popup-close popup-login__close"></div>
+              <div class="popup-close popup-login__close"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#F8F8FF"/>
+<path d="M16.8164 15.9725L20.8664 11.9225C20.9574 11.8162 21.005 11.6795 20.9996 11.5397C20.9942 11.3998 20.9362 11.2672 20.8373 11.1683C20.7383 11.0693 20.6057 11.0114 20.4659 11.006C20.3261 11.0006 20.1894 11.0481 20.0831 11.1391L16.0331 15.1891L11.9831 11.1336C11.8768 11.0426 11.7401 10.995 11.6003 11.0004C11.4605 11.0058 11.3278 11.0638 11.2289 11.1627C11.1299 11.2617 11.072 11.3943 11.0666 11.5341C11.0612 11.6739 11.1087 11.8106 11.1997 11.9169L15.2497 15.9725L11.1942 20.0225C11.136 20.0723 11.0888 20.1336 11.0555 20.2025C11.0221 20.2714 11.0034 20.3465 11.0004 20.423C10.9975 20.4995 11.0104 20.5758 11.0383 20.6471C11.0662 20.7184 11.1086 20.7831 11.1627 20.8373C11.2169 20.8914 11.2816 20.9338 11.3529 20.9617C11.4242 20.9896 11.5005 21.0025 11.577 20.9996C11.6535 20.9966 11.7286 20.9779 11.7975 20.9445C11.8664 20.9112 11.9277 20.864 11.9775 20.8058L16.0331 16.7558L20.0831 20.8058C20.1894 20.8968 20.3261 20.9444 20.4659 20.939C20.6057 20.9336 20.7383 20.8756 20.8373 20.7767C20.9362 20.6777 20.9942 20.5451 20.9996 20.4053C21.005 20.2655 20.9574 20.1288 20.8664 20.0225L16.8164 15.9725Z" fill="#6776FF"/>
+</svg>
+              </div>
               <div class="popup-login__wrapper popup-login__wrapper-big">
                 <form class="form login-form">
                   <div class="login-form__header">
@@ -889,7 +1027,11 @@
         <div class="popup popup-login popup-thanks-edit">
           <div class="popup-wrapper popup__wrapper">
             <div class="popup-login__content">
-              <div class="popup-close popup-login__close"></div>
+              <div class="popup-close popup-login__close"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#F8F8FF"/>
+<path d="M16.8164 15.9725L20.8664 11.9225C20.9574 11.8162 21.005 11.6795 20.9996 11.5397C20.9942 11.3998 20.9362 11.2672 20.8373 11.1683C20.7383 11.0693 20.6057 11.0114 20.4659 11.006C20.3261 11.0006 20.1894 11.0481 20.0831 11.1391L16.0331 15.1891L11.9831 11.1336C11.8768 11.0426 11.7401 10.995 11.6003 11.0004C11.4605 11.0058 11.3278 11.0638 11.2289 11.1627C11.1299 11.2617 11.072 11.3943 11.0666 11.5341C11.0612 11.6739 11.1087 11.8106 11.1997 11.9169L15.2497 15.9725L11.1942 20.0225C11.136 20.0723 11.0888 20.1336 11.0555 20.2025C11.0221 20.2714 11.0034 20.3465 11.0004 20.423C10.9975 20.4995 11.0104 20.5758 11.0383 20.6471C11.0662 20.7184 11.1086 20.7831 11.1627 20.8373C11.2169 20.8914 11.2816 20.9338 11.3529 20.9617C11.4242 20.9896 11.5005 21.0025 11.577 20.9996C11.6535 20.9966 11.7286 20.9779 11.7975 20.9445C11.8664 20.9112 11.9277 20.864 11.9775 20.8058L16.0331 16.7558L20.0831 20.8058C20.1894 20.8968 20.3261 20.9444 20.4659 20.939C20.6057 20.9336 20.7383 20.8756 20.8373 20.7767C20.9362 20.6777 20.9942 20.5451 20.9996 20.4053C21.005 20.2655 20.9574 20.1288 20.8664 20.0225L16.8164 15.9725Z" fill="#6776FF"/>
+</svg>
+              </div>
               <div class="popup-login__wrapper">
                 <div class="login-form">
                   <div class="login-form__header">
@@ -904,8 +1046,69 @@
             </div>
           </div>
         </div>
-        <div class="back-top"><img class="back-top__img" src="img/triangle-blue.svg"></div>
+        <div class="popup popup-favorite popup-favorite-add">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-favorite__content">
+              <div class="popup-close popup-favorite__close"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#F8F8FF"/>
+<path d="M16.8164 15.9725L20.8664 11.9225C20.9574 11.8162 21.005 11.6795 20.9996 11.5397C20.9942 11.3998 20.9362 11.2672 20.8373 11.1683C20.7383 11.0693 20.6057 11.0114 20.4659 11.006C20.3261 11.0006 20.1894 11.0481 20.0831 11.1391L16.0331 15.1891L11.9831 11.1336C11.8768 11.0426 11.7401 10.995 11.6003 11.0004C11.4605 11.0058 11.3278 11.0638 11.2289 11.1627C11.1299 11.2617 11.072 11.3943 11.0666 11.5341C11.0612 11.6739 11.1087 11.8106 11.1997 11.9169L15.2497 15.9725L11.1942 20.0225C11.136 20.0723 11.0888 20.1336 11.0555 20.2025C11.0221 20.2714 11.0034 20.3465 11.0004 20.423C10.9975 20.4995 11.0104 20.5758 11.0383 20.6471C11.0662 20.7184 11.1086 20.7831 11.1627 20.8373C11.2169 20.8914 11.2816 20.9338 11.3529 20.9617C11.4242 20.9896 11.5005 21.0025 11.577 20.9996C11.6535 20.9966 11.7286 20.9779 11.7975 20.9445C11.8664 20.9112 11.9277 20.864 11.9775 20.8058L16.0331 16.7558L20.0831 20.8058C20.1894 20.8968 20.3261 20.9444 20.4659 20.939C20.6057 20.9336 20.7383 20.8756 20.8373 20.7767C20.9362 20.6777 20.9942 20.5451 20.9996 20.4053C21.005 20.2655 20.9574 20.1288 20.8664 20.0225L16.8164 15.9725Z" fill="#6776FF"/>
+</svg>
+              </div>
+              <div class="popup-favorite__wrapper">
+                <div class="popup-favorite__grid">
+                  <div class="popup-favorite__grid-item">
+                    <p class="title title_size-smallest title_color-blue popup-favorite__title">Добавляйте в избранное</p>
+                    <div class="popup-favorite__desc">
+                      <p class="popup-favorite__text">Нажимайте на звездочку, чтобы сохранить понравившиеся обучения в Личном кабинете.</p>
+                    </div>
+                    <div class="popup-favorite__block">
+                      <p class="popup-favorite__text">Это нужно, чтобы:</p>
+                    </div>
+                    <div class="popup-favorite__list">
+                      <ul class="popup-favorite-list">
+                        <li class="popup-favorite__text">Не потерять обучение, которое вас заинтересовало.</li>
+                        <li class="popup-favorite__text">Всегда иметь быстрый доступ к своим обучениям через Личный кабинет.</li>
+                        <li class="popup-favorite__text">Получать важные уведомления о курсе на почту.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="popup-favorite__grid-item">
+                    <div class="popup-favorite__img"><img class="popup-favorite__img-item" src="img/favorite.png"><img class="popup-favorite__img-item popup-favorite__img-item_m" src="img/favorite-m.svg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-favorite popup-favorite-error">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-favorite__content">
+              <div class="popup-close popup-favorite__close"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#F8F8FF"/>
+<path d="M16.8164 15.9725L20.8664 11.9225C20.9574 11.8162 21.005 11.6795 20.9996 11.5397C20.9942 11.3998 20.9362 11.2672 20.8373 11.1683C20.7383 11.0693 20.6057 11.0114 20.4659 11.006C20.3261 11.0006 20.1894 11.0481 20.0831 11.1391L16.0331 15.1891L11.9831 11.1336C11.8768 11.0426 11.7401 10.995 11.6003 11.0004C11.4605 11.0058 11.3278 11.0638 11.2289 11.1627C11.1299 11.2617 11.072 11.3943 11.0666 11.5341C11.0612 11.6739 11.1087 11.8106 11.1997 11.9169L15.2497 15.9725L11.1942 20.0225C11.136 20.0723 11.0888 20.1336 11.0555 20.2025C11.0221 20.2714 11.0034 20.3465 11.0004 20.423C10.9975 20.4995 11.0104 20.5758 11.0383 20.6471C11.0662 20.7184 11.1086 20.7831 11.1627 20.8373C11.2169 20.8914 11.2816 20.9338 11.3529 20.9617C11.4242 20.9896 11.5005 21.0025 11.577 20.9996C11.6535 20.9966 11.7286 20.9779 11.7975 20.9445C11.8664 20.9112 11.9277 20.864 11.9775 20.8058L16.0331 16.7558L20.0831 20.8058C20.1894 20.8968 20.3261 20.9444 20.4659 20.939C20.6057 20.9336 20.7383 20.8756 20.8373 20.7767C20.9362 20.6777 20.9942 20.5451 20.9996 20.4053C21.005 20.2655 20.9574 20.1288 20.8664 20.0225L16.8164 15.9725Z" fill="#6776FF"/>
+</svg>
+              </div>
+              <div class="popup-favorite__wrapper">
+                <div class="popup-favorite__grid">
+                  <div class="popup-favorite__grid-item">
+                    <p class="title title_size-smallest title_color-blue popup-favorite__title title_position-center">Упс!</p>
+                    <div class="popup-favorite__desc popup-favorite__desc-small">
+                      <p class="popup-favorite__text">Чтобы получить возможность сохранять понравившиеся обучения в Личном кабинете и всегда иметь быстрый доступ к ним, сначала Вам необходимо:</p>
+                      <p class="popup-favorite__text"><a href='#' class="link-blue">Войти</a> или <a href='#' class="link-blue">Зарегистрироваться</a></p>
+                    </div>
+                  </div>
+                  <div class="popup-favorite__grid-item">
+                    <div class="popup-favorite__img"><img class="popup-favorite__img-item" src="img/favorite-error.png"><img class="popup-favorite__img-item popup-favorite__img-item_m" src="img/favorite-error.png"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="back-top"><img class="back-top__img" src="img/triangle-blue.svg"></div><script src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@1.1.9/dist/circularProgressBar.min.js"></script>
         <script src="libs/swiper/swiper.js"></script>
+        <script src="libs/noUiSlider/noUiSlider.js"></script>
+        <script src="libs/datepicker/datepicker.js"></script>
         <script src="js/common.js"></script>
       </div>
     </div>
