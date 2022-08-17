@@ -125,6 +125,24 @@ const createFileBlock = (text) => {
     return blockFile;
 }
 
+const fileInputFunc = (input, inputParent) => {
+    const inputFile = inputParent.querySelector('.file-input-files');
+
+    inputParent.classList.add('active');
+
+    inputFile.innerHTML = '';
+    inputFile.append(createFileBlock(input.files[0].name));
+
+    const fileInputClose = inputParent.querySelector('.file-input-close');
+
+    fileInputClose.addEventListener('click', () => {
+        input.value = '';
+        inputFile.innerHTML = '';
+
+        inputParent.classList.remove('active');
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     tabsInit();
 
@@ -379,22 +397,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (fileInput.length > 0) {
         fileInput.forEach(element => {
-            const fileInputItem = element.querySelector('.file-input-item'),
-                fileInputFiles = element.querySelector('.file-input-files');
+            const fileInputItem = element.querySelector('.file-input-item');
+
 
             fileInputItem.addEventListener('change', () => {
-                fileInputFiles.innerHTML = '';
-                fileInputFiles.append(createFileBlock(fileInputItem.files[0].name));
-
-                const fileInputClose = element.querySelector('.file-input-close');
-
-                fileInputClose.addEventListener('click', () => {
-                    fileInputItem.value = '';
-
-                    fileInputFiles.innerHTML = '';
-                });
+                fileInputFunc(fileInputItem, element)
             });
         });
+    }
+
+
+    const dropContainer = document.querySelector('.drop-container');
+
+    if (dropContainer) {
+        const dropContainerInput = dropContainer.querySelector('input');
+        dropContainer.ondragover = dropContainer.ondragenter = function (evt) {
+            evt.preventDefault();
+        };
+
+        dropContainer.ondrop = function (evt) {
+            evt.preventDefault();
+
+            dropContainerInput.files = evt.dataTransfer.files;
+            fileInputFunc(dropContainerInput, dropContainer)
+
+        };
     }
 
     const rangeSliderWrapper = document.querySelector('.range-slider-wrapper');
@@ -474,57 +501,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const pie = document.querySelector('.pie');
 
-    if(pie){
+    if (pie) {
         const circle = new CircularProgressBar("pie");
         circle.initial();
     }
 
     const inputWrappersLinks = document.querySelectorAll('.input-wrappers-link');
 
-    if(inputWrappersLinks.length > 0){
-        inputWrappersLinks.forEach(element=>{
-           element.addEventListener('click',(e)=>{
-               e.preventDefault();
+    if (inputWrappersLinks.length > 0) {
+        inputWrappersLinks.forEach(element => {
+            element.addEventListener('click', (e) => {
+                e.preventDefault();
 
 
-               element.classList.toggle('active');
+                element.classList.toggle('active');
 
-               const inputWrapper = element.closest('.input-wrappers'),
-                   inputWrapperItems = inputWrapper.querySelectorAll('.input-wrappers-item');
+                const inputWrapper = element.closest('.input-wrappers'),
+                    inputWrapperItems = inputWrapper.querySelectorAll('.input-wrappers-item');
 
-               inputWrapperItems.forEach(inputItem=>{
+                inputWrapperItems.forEach(inputItem => {
 
-                   element.classList.contains('active') ? inputItem.checked = true : inputItem.checked = false;
-               });
-           });
+                    element.classList.contains('active') ? inputItem.checked = true : inputItem.checked = false;
+                });
+            });
         });
     }
 
     const filterListLinks = document.querySelectorAll('.filter__list-close');
 
-    if(filterListLinks.length > 0){
-        filterListLinks.forEach(element=>{
-           element.addEventListener('click',()=>{
+    if (filterListLinks.length > 0) {
+        filterListLinks.forEach(element => {
+            element.addEventListener('click', () => {
 
-               const elementParent = element.closest('.filter__list-item');
+                const elementParent = element.closest('.filter__list-item');
 
-               elementParent.classList.add('hidden');
-           });
+                elementParent.classList.add('hidden');
+            });
         });
     }
 
     const filterListLinkReset = document.querySelectorAll('.filter__list-link-reset');
 
-    if(filterListLinkReset.length > 0){
-        filterListLinkReset.forEach(element=>{
-           element.addEventListener('click',()=>{
-               const filterList = element.closest('.filter-list'),
-                   filterListItems = filterList.querySelectorAll('.filter__list-item');
+    if (filterListLinkReset.length > 0) {
+        filterListLinkReset.forEach(element => {
+            element.addEventListener('click', () => {
+                const filterList = element.closest('.filter-list'),
+                    filterListItems = filterList.querySelectorAll('.filter__list-item');
 
-               filterListItems.forEach(filterElement=>{
-                   filterElement.classList.add('hidden');
-               });
-           });
+                filterListItems.forEach(filterElement => {
+                    filterElement.classList.add('hidden');
+                });
+            });
         });
     }
 });
