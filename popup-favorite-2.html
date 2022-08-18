@@ -25,10 +25,10 @@
                   <div class="header__nav">
                     <nav class="header-nav">
                       <ul class="header-nav__list">
-                        <li class="header-nav__item"><a class="header-nav__link active" href="#">Главная</a></li>
-                        <li class="header-nav__item"><a class="header-nav__link" href="#">Обучение</a></li>
-                        <li class="header-nav__item"><a class="header-nav__link" href="#">Мероприятия</a></li>
-                        <li class="header-nav__item"><a class="header-nav__link" href="#">Магазин</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link active" href="index.html">Главная</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="traning.html">Обучение</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="event.html">Мероприятия</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="shop.html">Магазин</a></li>
                       </ul>
                       <div class="header-nav__divider">
                         <div class="header-nav__divider-icon">
@@ -38,16 +38,16 @@
                         </div>
                       </div>
                       <ul class="header-nav__list header-nav__list-mobile">
-                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="#">Моё обучение</a></li>
-                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="#">Мои мероприятия</a></li>
-                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="#">Личный кабинет</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="profile-4.html">Моё обучение</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="profile-8.html">Мои мероприятия</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="profile.html">Личный кабинет</a></li>
                         <li class="header-nav__item header-nav__item_enter"><a class="header-nav__link header-nav__link_enter" href="#" data-popup="popup-enter">Войти</a></li>
                       </ul>
                     </nav>
                   </div>
                   <div class="header__profile">
                     <div class="header__profile-block">
-                      <div class="notification trigger-wrapper"><a class="notification__icon notification__icon_new trigger-link" href="#">
+                      <div class="notification trigger-wrapper"><a class="notification__icon notification__icon_new trigger-link notification-icon" href="#">
                           <svg class="icon icon-bell ">
                             <use xlink:href="img/svg/sprite.svg#bell"></use>
                           </svg></a>
@@ -58,7 +58,7 @@
                                 <div class="notification-close"></div>
                               </div>
                               <div class="notification-content__header">
-                                <p class="title title_color-blue title_size-smallest notification-content__title">Уведомления</p><a class="link-blue notification-content__link" href="#">Отметить все прочитанными</a>
+                                <p class="title title_color-blue title_size-smallest notification-content__title">Уведомления</p><a class="link-blue notification-content__link notification-reset" href="#">Отметить все прочитанными</a>
                               </div>
                               <div class="notification-content__block swiper notification-content-slider">
                                 <div class="swiper-wrapper">
@@ -83,7 +83,7 @@
                                       </div>
                                     </div>
                                     <div class="notification__item">
-                                      <div class="notification-item notification-item_undread">
+                                      <div class="notification-item notification-item_unread">
                                         <div class="notification-item__wrapper">
                                           <div class="notification-item__header">
                                             <div class="notification-item__header-block">
@@ -135,10 +135,13 @@
                                 </svg></span></a></div>
                           <div class="header-profile__wrapper-block">
                             <ul class="header-profile__list trigger-block">
-                              <li class="header-profile__list-item"><a class="header-profile__list-link" href="#">Моё обучение</a></li>
-                              <li class="header-profile__list-item"><a class="header-profile__list-link" href="#">Мои мероприятия</a></li>
-                              <li class="header-profile__list-item"><a class="header-profile__list-link" href="#">Личный кабинет</a></li>
-                              <li class="header-profile__list-item"><a class="header-profile__list-link header-profile__list-link_enter" href="#" data-popup="popup-enter">Войти</a></li>
+                              <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="profile-4.html">Моё обучение</a></li>
+                              <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="profile-8.html">Мои мероприятия</a></li>
+                              <li class="header-nav__item"><a class="header-nav__link header-nav__link_blue" href="profile.html">Личный кабинет</a></li>
+                              <li class="header-profile__list-item"><a class="header-profile__list-link header-profile__list-link_enter" href="#" data-popup="popup-enter"><span class="header-profile__list-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.6035 0.361239C6.93943 0.260464 7.29428 0.239617 7.6397 0.300362C7.98512 0.361107 8.31156 0.501762 8.59296 0.711099C8.87436 0.920435 9.10292 1.19266 9.26041 1.50603C9.4179 1.81941 9.49994 2.16527 9.5 2.51599V13.484C9.49994 13.8347 9.4179 14.1806 9.26041 14.4939C9.10292 14.8073 8.87436 15.0795 8.59296 15.2889C8.31156 15.4982 7.98512 15.6389 7.6397 15.6996C7.29428 15.7604 6.93943 15.7395 6.6035 15.6387L2.1035 14.2887C1.64008 14.1497 1.23381 13.865 0.944961 13.4769C0.656115 13.0887 0.500079 12.6178 0.5 12.134V3.86599C0.500079 3.38216 0.656115 2.91125 0.944961 2.5231C1.23381 2.13496 1.64008 1.85026 2.1035 1.71124L6.6035 0.361239V0.361239ZM10.25 1.99999C10.25 1.80108 10.329 1.61031 10.4697 1.46966C10.6103 1.32901 10.8011 1.24999 11 1.24999H13.25C13.8467 1.24999 14.419 1.48704 14.841 1.909C15.2629 2.33096 15.5 2.90325 15.5 3.49999V4.24999C15.5 4.4489 15.421 4.63967 15.2803 4.78032C15.1397 4.92097 14.9489 4.99999 14.75 4.99999C14.5511 4.99999 14.3603 4.92097 14.2197 4.78032C14.079 4.63967 14 4.4489 14 4.24999V3.49999C14 3.30108 13.921 3.11031 13.7803 2.96966C13.6397 2.82901 13.4489 2.74999 13.25 2.74999H11C10.8011 2.74999 10.6103 2.67097 10.4697 2.53032C10.329 2.38967 10.25 2.1989 10.25 1.99999ZM14.75 11C14.9489 11 15.1397 11.079 15.2803 11.2197C15.421 11.3603 15.5 11.5511 15.5 11.75V12.5C15.5 13.0967 15.2629 13.669 14.841 14.091C14.419 14.5129 13.8467 14.75 13.25 14.75H11C10.8011 14.75 10.6103 14.671 10.4697 14.5303C10.329 14.3897 10.25 14.1989 10.25 14C10.25 13.8011 10.329 13.6103 10.4697 13.4697C10.6103 13.329 10.8011 13.25 11 13.25H13.25C13.4489 13.25 13.6397 13.171 13.7803 13.0303C13.921 12.8897 14 12.6989 14 12.5V11.75C14 11.5511 14.079 11.3603 14.2197 11.2197C14.3603 11.079 14.5511 11 14.75 11ZM5.75 7.24999C5.55109 7.24999 5.36032 7.32901 5.21967 7.46966C5.07902 7.61031 5 7.80108 5 7.99999C5 8.1989 5.07902 8.38967 5.21967 8.53032C5.36032 8.67097 5.55109 8.74999 5.75 8.74999H5.75075C5.94966 8.74999 6.14043 8.67097 6.28108 8.53032C6.42173 8.38967 6.50075 8.1989 6.50075 7.99999C6.50075 7.80108 6.42173 7.61031 6.28108 7.46966C6.14043 7.32901 5.94966 7.24999 5.75075 7.24999H5.75Z" fill="#6776FF"/>
+<path d="M14.75 8L13.25 9.5M11 8H14.75H11ZM14.75 8L13.25 6.5L14.75 8Z" stroke="#6776FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span><span>Войти</span></a></li>
                             </ul>
                           </div>
                         </div>
@@ -678,6 +681,18 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup-img">
+          <div class="popup-wrapper popup__wrapper">
+            <div class="popup-img__content">
+              <div class="popup-close popup-favorite__close"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#F8F8FF"/>
+<path d="M16.8164 15.9725L20.8664 11.9225C20.9574 11.8162 21.005 11.6795 20.9996 11.5397C20.9942 11.3998 20.9362 11.2672 20.8373 11.1683C20.7383 11.0693 20.6057 11.0114 20.4659 11.006C20.3261 11.0006 20.1894 11.0481 20.0831 11.1391L16.0331 15.1891L11.9831 11.1336C11.8768 11.0426 11.7401 10.995 11.6003 11.0004C11.4605 11.0058 11.3278 11.0638 11.2289 11.1627C11.1299 11.2617 11.072 11.3943 11.0666 11.5341C11.0612 11.6739 11.1087 11.8106 11.1997 11.9169L15.2497 15.9725L11.1942 20.0225C11.136 20.0723 11.0888 20.1336 11.0555 20.2025C11.0221 20.2714 11.0034 20.3465 11.0004 20.423C10.9975 20.4995 11.0104 20.5758 11.0383 20.6471C11.0662 20.7184 11.1086 20.7831 11.1627 20.8373C11.2169 20.8914 11.2816 20.9338 11.3529 20.9617C11.4242 20.9896 11.5005 21.0025 11.577 20.9996C11.6535 20.9966 11.7286 20.9779 11.7975 20.9445C11.8664 20.9112 11.9277 20.864 11.9775 20.8058L16.0331 16.7558L20.0831 20.8058C20.1894 20.8968 20.3261 20.9444 20.4659 20.939C20.6057 20.9336 20.7383 20.8756 20.8373 20.7767C20.9362 20.6777 20.9942 20.5451 20.9996 20.4053C21.005 20.2655 20.9574 20.1288 20.8664 20.0225L16.8164 15.9725Z" fill="#6776FF"/>
+</svg>
+              </div>
+              <div class="popup-img__item"><img src=""></div>
             </div>
           </div>
         </div>

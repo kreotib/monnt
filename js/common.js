@@ -24,6 +24,13 @@ const changeTab = (block, newIndex = 0) => {
 
     changeIndex(tabsNavItemArray, newIndex);
     changeIndex(tabsContentItemArray, newIndex);
+
+    if(block.classList.contains('event-tabs')){
+        const tabsNav = block.querySelector('.tabs-nav');
+
+        newIndex === 1 ? tabsNav.classList.add('event-tabs__nav-right') : tabsNav.classList.remove('event-tabs__nav-right');
+
+    }
 };
 
 const changeIndex = (array, newIndex) => {
@@ -89,7 +96,7 @@ const commentTextExpand = (slider) => {
 
                 elementLink.classList.toggle('active');
                 elementLink.classList.contains('active') ? (elementLink.textContent = 'скрыть', element.textContent = elementFullText) : (elementLink.textContent = 'показать полностью', element.textContent = elementSliceText);
-                slider.updateAutoHeight(500)
+                slider.updateAutoHeight(100)
             });
         }
     });
@@ -144,6 +151,7 @@ const fileInputFunc = (input, inputParent) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+
     tabsInit();
 
     const popups = document.querySelectorAll('.popup'),
@@ -179,12 +187,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
 
                 const triggerWrapper = trigger.closest('.trigger-wrapper'),
-                    triggerBlock = triggerWrapper.querySelectorAll('.trigger-block');
+                    triggerBlocks = triggerWrapper.querySelectorAll('.trigger-block'),
+                    triggerBlock = triggerWrapper.querySelector('.trigger-block'),
+                    triggerWrapperAll = trigger.closest('.trigger-wrapper-all'),
+                    triggerWrapperOne = trigger.closest('.trigger-wrapper-one');
 
-                trigger.classList.toggle('active');
-                triggerBlock.forEach(element => {
-                    element.classList.toggle('active');
-                })
+
+                if (triggerWrapperAll) {
+                    const triggerBlocksAll = triggerWrapperAll.querySelectorAll('.trigger-block'),
+                        triggerLinksAll = triggerWrapperAll.querySelectorAll('.trigger-link');
+                    triggerLinksAll.forEach(element => {
+                        trigger !== element ? element.classList.remove('active') : null;
+                    });
+                    triggerBlocksAll.forEach(element => {
+                        triggerBlock !== element ? element.classList.remove('active') : null;
+
+                    });
+                    trigger.classList.toggle('active');
+                    triggerBlock.classList.toggle('active');
+                } else if (triggerWrapperOne) {
+                    trigger.classList.toggle('active');
+                    triggerBlock.classList.toggle('active');
+
+                } else {
+                    trigger.classList.toggle('active');
+                    triggerBlocks.forEach(element => {
+                        element.classList.toggle('active');
+                    })
+                }
             });
         });
     }
@@ -294,6 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
             slidesPerView: 'auto',
             spaceBetween: 40,
             autoHeight: true,
+            speed: 300,
             pagination: {
                 el: ".comment-slider-pagination",
                 type: "fraction",
@@ -405,7 +436,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
 
     const dropContainer = document.querySelector('.drop-container');
 
@@ -554,4 +584,150 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    const notification = document.querySelector('.notification'),
+        headerProfile = document.querySelector('.header-profile');
+
+    document.addEventListener('click', (e) => {
+        const helpBlocks = document.querySelectorAll('.help');
+
+        if (helpBlocks.length > 0) {
+            helpBlocks.forEach(element => {
+                const helpTrigger = element.querySelector('.trigger-link'),
+                    helpBlock = element.querySelector('.trigger-block');
+                if (!(element.contains(e.target))) {
+                    helpTrigger.classList.remove('active');
+                    helpBlock.classList.remove('active');
+                }
+            })
+        }
+
+        if (notification) {
+            const notificationTrigger = notification.querySelector('.trigger-link'),
+                notificationBlock = notification.querySelector('.trigger-block');
+
+            if (!(notification.contains(e.target))) {
+                notificationTrigger.classList.remove('active');
+                notificationBlock.classList.remove('active');
+            }
+        }
+
+        if(headerProfile){
+            const headerTrigger = headerProfile.querySelector('.header-profile__link'),
+                headerBlock = headerProfile.querySelector('.header-profile__list');
+
+            if (!(headerProfile.contains(e.target))) {
+                headerTrigger.classList.remove('active');
+                headerBlock.classList.remove('active');
+            }
+        }
+    });
+
+    if (notification) {
+        const notificationItem = notification.querySelectorAll('.notification-item'),
+            notificationReset = notification.querySelector('.notification-reset'),
+            notificationIcon = notification.querySelector('.notification-icon');
+
+        notificationReset.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            notificationItem.forEach(element => {
+                element.classList.remove('notification-item_unread');
+            });
+
+            notificationIcon.classList.remove('notification__icon_new');
+        });
+    }
+
+    const cardStars = document.querySelectorAll('.card-star');
+
+    if (cardStars.length > 0) {
+        cardStars.forEach(element => {
+            element.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                element.classList.toggle('card-star--active');
+            });
+        });
+    }
+
+    const calendar = document.querySelector('.calendar');
+
+    if (calendar) {
+        const calendarEventList = calendar.querySelectorAll('.calendar-event-list');
+
+        calendarEventList.forEach(calendarList => {
+            const calendarEvent = calendarList.querySelectorAll('.calendar__event');
+
+            if (calendarEvent.length > 3) {
+                calendarEvent.forEach((element, index) => {
+                    index < 3 ? (element.classList.add('active')) : element.classList.remove('active');
+                });
+
+                const elementLink = document.createElement('a');
+
+                elementLink.setAttribute('href', '#');
+                elementLink.classList.add('calendar__link');
+                elementLink.textContent = 'cмотреть ещё'
+                calendarList.after(elementLink);
+
+
+                elementLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    elementLink.classList.toggle('active');
+                    if (elementLink.classList.contains('active')) {
+                        elementLink.textContent = 'cкрыть';
+
+                        calendarEvent.forEach((element, index) => {
+                            element.classList.add('active');
+                        });
+                    } else {
+                        elementLink.textContent = 'показать еще';
+
+                        calendarEvent.forEach((element, index) => {
+                            index < 3 ? (element.classList.add('active')) : element.classList.remove('active');
+                        });
+                    }
+                });
+            }
+
+        });
+    }
+
+    const favoriteBlock = document.querySelector('.favorite-block');
+
+    if (favoriteBlock) {
+        const favoriteButton = favoriteBlock.querySelector('.favorite-block__button-item'),
+            trainingBlockFooter = favoriteBlock.closest('.training-header__favorite');
+
+        favoriteButton.addEventListener('click', () => {
+            favoriteButton.classList.add('favorite-block__button-item--active');
+            trainingBlockFooter.classList.add('training-header__favorite--active');
+            favoriteBlock.classList.add('favorite-block--active');
+        });
+    }
+
+    const imgZoom = document.querySelectorAll('.zoom-img');
+
+    if (imgZoom.length > 0) {
+        imgZoom.forEach(element => {
+            const imgZoomLink = element.querySelector('.zoom-img-link');
+
+            imgZoomLink.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                const zoomImgItem = element.querySelector('.zoom-img-item');
+
+                const popupImgItem = document.querySelector('.popup-img__item img');
+
+                popupImgItem.setAttribute('src', zoomImgItem.getAttribute('src'));
+
+                console.log(popupImgItem.src)
+
+                popupOpen('popup-img');
+            });
+        });
+    }
+
 });
