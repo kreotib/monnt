@@ -4156,16 +4156,16 @@ body.no-scroll-m {
   max-width: 740px;
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height .75s ease-out;
-  -o-transition: max-height .75s ease-out;
-  transition: max-height .75s ease-out;
+  -webkit-transition: max-height 5s ease-out;
+  -o-transition: max-height 5s ease-out;
+  transition: max-height 5s ease-out;
 }
 
 .lesson-item__content.active {
-  max-height: 100vh;
-  -webkit-transition: max-height 1s linear;
-  -o-transition: max-height 1s linear;
-  transition: max-height 1s linear;
+  max-height: 1000vh;
+  -webkit-transition: max-height 10s linear;
+  -o-transition: max-height 10s linear;
+  transition: max-height 10s linear;
 }
 
 .lesson-item__content-box {
