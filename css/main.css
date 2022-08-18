@@ -1697,20 +1697,28 @@ body.no-scroll-m {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-}
-
-.header-nav__link.active {
   position: relative;
 }
 
-.header-nav__link.active::after {
+.header-nav__link::after {
   content: '';
   position: absolute;
   left: -2px;
   bottom: -3px;
-  width: calc(100% + 4px);
+  width: 0;
   height: 2px;
   background: #6776FF;
+  -webkit-transition: .3s width;
+  -o-transition: .3s width;
+  transition: .3s width;
+}
+
+.header-nav__link.active::after {
+  width: calc(100% + 4px);
+}
+
+.header-nav__link:hover::after {
+  width: calc(100% + 4px);
 }
 
 .header-profile__wrapper {
@@ -4149,18 +4157,18 @@ body.no-scroll-m {
   max-width: 740px;
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.75s ease-out;
-  -o-transition: all 0.75s ease-out;
-  transition: all 0.75s ease-out;
+  -webkit-transition: max-height 0.75s ease-out;
+  -o-transition: max-height 0.75s ease-out;
+  transition: max-height 0.75s ease-out;
   /* smooth-transition between both "states" */
 }
 
 .lesson-item__content.active {
   margin: 16px 0 0 0;
   max-height: 100vh;
-  -webkit-transition: all 0.75s ease-out;
-  -o-transition: all 0.75s ease-out;
-  transition: all 0.75s ease-out;
+  -webkit-transition: max-height 0.75s ease-out;
+  -o-transition: max-height 0.75s ease-out;
+  transition: max-height 0.75s ease-out;
   /* smooth-transition between both "states" */
 }
 
