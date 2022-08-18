@@ -4153,7 +4153,6 @@ body.no-scroll-m {
 }
 
 .lesson-item__content {
-  margin: 0 0 0 0;
   max-width: 740px;
   max-height: 0;
   overflow: hidden;
@@ -4164,12 +4163,15 @@ body.no-scroll-m {
 }
 
 .lesson-item__content.active {
-  margin: 16px 0 0 0;
   max-height: 100vh;
   -webkit-transition: max-height 0.75s ease-out;
   -o-transition: max-height 0.75s ease-out;
   transition: max-height 0.75s ease-out;
   /* smooth-transition between both "states" */
+}
+
+.lesson-item__content-box {
+  padding: 16px 0 0 0;
 }
 
 .lesson-item__content-grid {
