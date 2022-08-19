@@ -754,7 +754,7 @@ body.no-scroll-m {
   width: 0;
   height: 1px;
   display: block;
-  background-color: #fff;
+  background-color: #6776FF;
   -webkit-transition: .3s width linear;
   -o-transition: .3s width linear;
   transition: .3s width linear;
@@ -787,6 +787,10 @@ body.no-scroll-m {
 
 .breadcrumb-list__item_white + .breadcrumb-list__item_white::before {
   background-image: url("../img/breadcrumb-arrow-white.svg");
+}
+
+.breadcrumb-list__item_white .breadcrumb-list__link::before {
+  background-color: #fff;
 }
 
 .breadcrumb-list__item_m {
@@ -1071,7 +1075,7 @@ body.no-scroll-m {
 .attach-input__checkmark span {
   font-weight: 400;
   color: #B6B6B6;
-  margin: 0 8px 0 0;
+  margin: 0 0 0 8px;
 }
 
 .attach-input__checkmark::before {
@@ -1082,7 +1086,7 @@ body.no-scroll-m {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   background: url("../img/attach.svg") center center/contain no-repeat;
-  margin: 0 0 0 8px;
+  margin: 0 8px 0 0;
 }
 
 .reviews-list__item + .reviews-list__item {
@@ -4156,16 +4160,15 @@ body.no-scroll-m {
   max-width: 740px;
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 5s ease-out;
-  -o-transition: max-height 5s ease-out;
-  transition: max-height 5s ease-out;
+  -webkit-transition: max-height .3s linear;
+  -o-transition: max-height .3s linear;
+  transition: max-height .3s linear;
 }
 
 .lesson-item__content.active {
-  max-height: 1000vh;
-  -webkit-transition: max-height 10s linear;
-  -o-transition: max-height 10s linear;
-  transition: max-height 10s linear;
+  -webkit-transition: max-height .3s linear;
+  -o-transition: max-height .3s linear;
+  transition: max-height .3s linear;
 }
 
 .lesson-item__content-box {
@@ -7224,6 +7227,9 @@ body.no-scroll-m {
 .filter-block__content {
   margin: 14px 0 0 0;
   display: none;
+  -webkit-transition: .3s all linear;
+  -o-transition: .3s all linear;
+  transition: .3s all linear;
 }
 
 .filter-block__content.active {

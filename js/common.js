@@ -200,11 +200,20 @@ document.addEventListener('DOMContentLoaded', () => {
                         trigger !== element ? element.classList.remove('active') : null;
                     });
                     triggerBlocksAll.forEach(element => {
-                        triggerBlock !== element ? element.classList.remove('active') : null;
-
+                        triggerBlock !== element ? (element.style.maxHeight = 0, element.classList.remove('active')) : null;
                     });
                     trigger.classList.toggle('active');
                     triggerBlock.classList.toggle('active');
+                    if(triggerBlock.classList.contains('active')){
+                        triggerBlock.style.maxHeight = 'unset';
+                        const triggerBlockHeight = triggerBlock.clientHeight;
+                        triggerBlock.style.maxHeight = 0;
+                        setTimeout(()=>{
+                            triggerBlock.style.maxHeight = `${triggerBlockHeight}px`;
+                        },50)
+                    }else{
+                        triggerBlock.style.maxHeight = 0;
+                    }
                 } else if (triggerWrapperOne) {
                     trigger.classList.toggle('active');
                     triggerBlock.classList.toggle('active');
